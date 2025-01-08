@@ -1,0 +1,90 @@
+.experience-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+  height: 500px;
+  width: 100%;
+  padding: 30px 100px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.experience-section > div {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.experience-section > div > .experience-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.experience-section > div > .time-line-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.time-line {
+  position: relative;
+  width: 85%;
+  max-width: 1000px;
+  background-color: #da9b42;
+  height: 5px;
+  margin: auto;
+}
+
+.point1 {
+  position: absolute;
+  top: -8px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #da9b42;
+  border-radius: 50%;
+}
+
+.point2 {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #da9b42;
+  border-radius: 50%;
+}
+
+.point3 {
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #da9b42;
+  border-radius: 50%;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+.job-infos {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  box-sizing: border-box;
+  /* padding: 0 30px; */
+}
+
+.job-infos > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
