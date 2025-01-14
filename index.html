@@ -7,8 +7,8 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/social.css">
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/social.css">   
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/skills.css">
     <link rel="stylesheet" href="./css/experience.css">
@@ -21,187 +21,29 @@
 
 </head>
 <body>
-    <header class="cover-desktop">     
-        <img src="./assets/img/header/cover-desktop.JPG" alt="capa desktop">
-        <p class="my-logo">JOÃO CAMPOS</p>
-        <nav class="header-nav">
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#">HABILIDADES</a></li>
-            <li><a href="#">EXPERIÊNCIA</a></li>
-            <li><a href="#">PROJETOS</a></li>
-            <li><a href="#">RECOMENDAÇÕES</a></li>
-            <li><a href="#">CONTATOS</a></li>
-        </nav>
-        <div class="header-content">
-            <h2>Olá, me chamo João e sou</h2>
-            <h1>FULL STACK DEVELOPER</h1>
-            <h2>Criativo, versátil e transformador</h2>
-            <button class="orange-button">PROJETOS</button>
+    <header>
+        <div class="profile-container">
+            <div class="profile-info">
+                <p class="my-logo">JOÃO CAMPOS</p>
+                <a href="./pages/about.html" class="transition-link">Meu perfil</a>   
+            </div>
+            <a href="./pages/about.html" class="profile-circle">
+                <img src="./assets/img/perfil-portifolio.png" alt="foto de perfil" width="50px">
+            </a>
         </div>
     </header>
-    <div class="social-medias">
-        <a href=""><img src="./assets/img/social/linkedin.svg" alt="linkedin"></a>
-        <a href=""><img src="./assets/img/social/github.svg" alt="github"></a>
-        <a href=""><img src="./assets/img/social/whatsapp.svg" alt="whatsapp"></a>
-    </div>
-    <main>
-        <!-- about  -->
-         <section class="about-section">
-            <div class="about-container">
-                <div class="photo-profile">
-                    <img src="./assets/img/perfil-portifolio.png" alt="foto de perfil">
-                </div>
-                <div class="about-content">
-                    <div>
-                        <h2>QUEM SOU EU?</h2>
-                        <hr class="orange-line" style="width: 200px;">
-                    </div>
-                    <p>Olá, sou João Campos, um engenheiro químico de 25 anos que está embarcando em uma empolgante transição para a profissão de desenvolvedor front-end. Com uma sólida formação em engenharia química, descobri minha verdadeira paixão pela tecnologia web e decidi mergulhar de cabeça nesse novo desafio.</p>
-                    <button class="orange-button">BAIXAR CV</button>
-                </div>
+    <main class="cover-desktop transition-container">     
+        <img src="./assets/img/header/cover-desktop.JPG" alt="capa desktop">
+        <div class="index-content">
+            <h1>Escolha por onde quer navegar</h1>
+            <div class="index-options-grid">
+                <button class="btn-contact"><a href="">Contato</a></button>
+                <button class="btn-experience"><a href="">Experiência</a></button>
+                <button class="btn-skills"><a href="">Habilidades</a></button>
+                <button class="btn-projects"><a href="">Projetos</a></button>
             </div>
-         </section>
-
-        <!-- habilidades  -->
-         <section class="skills-section">
-            <div>
-                <h2>HABILIDADES</h2>
-                <hr class="orange-line" style="width: 200px;">
-            </div>
-            <div class="skills-container">
-                <div class="skill"><p>FRONTEND</p></div>
-                <div class="skill"><p>BACKEND</p></div>
-                <div class="skill"><p>DESIGN</p></div>
-            </div>
-            <div class="skill-info-container">
-                <div class="skill-text">
-                    <p>Possuo um amplo conhecimento prático das principais tecnologias requeridas por um desenvolvedor frontend, com vasto domínio principalmente das tecnologias HTML, CSS e React.</p>
-                    <p>Tenho experiência profissional trabalhando como desenvolvedor frontend em empresas como Mundiware e Golab. São empresas na área de tecnologia responsáveis por criar sites de notícias responsíveis e dinâmicos.</p>
-                    <p>Nelas, fiquei responsável em criar sites usando principalmente HTML, CSS e JavaScript, além da utilização de uma linguagem própria da empresa chamada MWTPL. Além disso, peguei demandas para manutenção de portais, criação de apps e versionamento constante de código usando Git.</p>
-                </div>
-                <div class="skill-tecnologies">
-                    <div>
-                        <p>HTML</p>
-                        <div class="skill-level" style="width: 95%;"></div>
-                    </div>
-                    <div>
-                        <p>CSS</p>
-                        <div class="skill-level" style="width: 85%;"></div>
-                    </div>
-                    <div>
-                        <p>JavaScript</p>
-                        <div class="skill-level" style="width: 75%;"></div>
-                    </div>
-                    <div>
-                        <p>React</p>
-                        <div class="skill-level" style="width: 65%;"></div>
-                    </div>
-                    <div>
-                        <p>Next JS</p>
-                        <div class="skill-level" style="width: 70%;"></div>
-                    </div>
-                    <div>
-                        <p>Tailwind</p>
-                        <div class="skill-level" style="width: 75%;"></div>
-                    </div>
-                    <div>
-                        <p>Git</p>
-                        <div class="skill-level" style="width: 65%;"></div>
-                    </div>
-                    <div>
-                        <p>Github</p>
-                        <div class="skill-level" style="width: 85%;"></div>
-                    </div>
-                </div>
-            </div>
-         </section>
-
-         <!-- experiecia  -->
-         <section class="experience-section">
-            <div>
-                <div class="experience-title">
-                    <h2>EXPERIÊNCIA</h2>
-                    <hr class="orange-line" style="width: 200px;">
-                </div>
-                <div class="time-line-container">
-                    <div class="dates">
-                        <span>04/2023</span>
-                        <span>06/2024</span>
-                        <span>01/2025</span>
-                    </div>
-                    <div class="time-line">
-                        <div class="point1"></div>
-                        <div class="point2"></div>
-                        <div class="point3"></div>
-                    </div>
-                    <div class="job-infos">
-                        <div>
-                            <span>Desenvolvedor frontend</span>
-                            <span>Freelancer</span>
-                        </div>
-                        <div>
-                            <span>Desenvolvedor frontend</span>
-                            <span>Estagiário</span>
-                            <span>Mundiware Systems</span>
-                        </div>
-                        <div>
-                            <span>Desenvolvedor frontend</span>
-                            <span>Trainee</span>
-                            <span>Mundiware Systems</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </section>
-         <!-- projetos  -->
-          <section class="projects-section project-cover">
-                <img src="./assets/img/projects/project-cover-desktop.JPG" alt="capa de projetos" class="project-cover-img">
-                <div class="projects-content">
-                    <div class="projects-title">
-                        <h2>PROJETOS</h2>
-                        <hr class="orange-line" style="width: 200px;">
-                    </div>
-                    <div id="splide" class="splide">
-                        <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="./assets/img/projects/project-mandala.png" alt="mandalas digitais" style="width: 100%;">
-                                <h2 style="font-size: 16px;">Mandalas digitais</h2>
-                                <p style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos inventore corrupti adipisci quod similique distinctio a dolorem laborum, beatae numquam laudantium ratione quisquam omnis quam excepturi natus. Veritatis, totam.</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="./assets/img/projects/project-mandala.png" alt="mandalas digitais" style="width: 100%;">
-                                <h2 style="font-size: 16px;">Mandalas digitais</h2>
-                                <p style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos inventore corrupti adipisci quod similique distinctio a dolorem laborum, beatae numquam laudantium ratione quisquam omnis quam excepturi natus. Veritatis, totam.</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="./assets/img/projects/project-mandala.png" alt="mandalas digitais" style="width: 100%;">
-                                <h2 style="font-size: 16px;">Mandalas digitais</h2>
-                                <p style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos inventore corrupti adipisci quod similique distinctio a dolorem laborum, beatae numquam laudantium ratione quisquam omnis quam excepturi natus. Veritatis, totam.</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="./assets/img/projects/project-mandala.png" alt="mandalas digitais" style="width: 100%;">
-                                <h2 style="font-size: 16px;">Mandalas digitais</h2>
-                                <p style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos inventore corrupti adipisci quod similique distinctio a dolorem laborum, beatae numquam laudantium ratione quisquam omnis quam excepturi natus. Veritatis, totam.</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="./assets/img/projects/project-mandala.png" alt="mandalas digitais" style="width: 100%;">
-                                <h2 style="font-size: 16px;">Mandalas digitais</h2>
-                                <p style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos inventore corrupti adipisci quod similique distinctio a dolorem laborum, beatae numquam laudantium ratione quisquam omnis quam excepturi natus. Veritatis, totam.</p>
-                            </li>
-                            <li class="splide__slide">
-                                <img src="./assets/img/projects/project-mandala.png" alt="mandalas digitais" style="width: 100%;">
-                                <h2 style="font-size: 16px;">Mandalas digitais</h2>
-                                <p style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos inventore corrupti adipisci quod similique distinctio a dolorem laborum, beatae numquam laudantium ratione quisquam omnis quam excepturi natus. Veritatis, totam.</p>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-                    <script src="./js/projects-splide.js"></script>
-                </div>
-          </section>
+        </div>
     </main>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

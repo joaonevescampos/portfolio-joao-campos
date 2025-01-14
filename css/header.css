@@ -1,102 +1,31 @@
-.cover-desktop {
-    position: relative;
-    font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
-    max-height: 1000px;
-    top: 0;
-    left: 0;
-}
-
-.cover-desktop img {
-    width: 100%;
-    height: 100%;
-    max-height: 1000px;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.cover-desktop::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1;
-}
-
-.my-logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: white;
-    z-index: 2;
-    font-size: 10px;
-}
-.header-nav {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 200;
+header {
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    position: absolute;
-    padding-top: 20px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    padding: 0 30px;
+    background-color: #000;
+    height: 100px;
+    font-family: 'Josefin Sans';
 }
 
-.header-nav a {
-    color: #FFFFFF;
-    text-decoration: none;
+header > .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.header-nav a:hover {
-    color: #C0760D;
-    transition: ease-in-out 0.5s;
-}
-
-.header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+header > .profile-container > .profile-info {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    color: #FFFFFF;
-    z-index: 2;
+    gap: 8px;
 }
 
-.header-content h2 {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.header-content h1 {
-    font-size: 60px;
-    font-weight: 400;
-    width: 800px;
-}
-
-.orange-button {
+header > .profile-container > .profile-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     background-color: #C0760D;
-    width: 150px;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 10px;
-    border-radius: 10px;
-    border: none;
-    height: 25px;
-    cursor: pointer;
-}
-
-.orange-button:hover {
-    scale: 1.1;
-    transition: ease 0.5s;
+    width: 60px;
+    height: 60px;
 }
