@@ -14,3 +14,17 @@ links.forEach(link => {
     }, 500); // Corresponde ao tempo da animação (0.5s)
   });
 });
+
+
+// Texto aparecendo suavemente
+
+// Aguarda o carregamento da página
+    window.addEventListener('load', () => {
+      // Seleciona todos os elementos com a classe "fade-in-text"
+      const fadeInElements = document.querySelectorAll('.fade-in-text');
+
+      // Adiciona a classe "visible" a cada elemento
+      fadeInElements.forEach((element) => {
+        element.classList.add('visible');
+      });
+    });

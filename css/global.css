@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #202020;
+    background-color: #000000;
     color: #FFFFFF;
 }
 
@@ -13,12 +13,25 @@ body {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 /* Container com transição */
 .transition-container {
   animation: fade-in 0.5s ease-out;
 }
+
+.fade-in-text {
+      opacity: 0; /* Inicialmente invisível */
+      transform: translateY(20px); /* Move o texto levemente para baixo */
+      transition: opacity 3s ease, transform 3s ease; /* Transição suave */
+    }
+
+    /* Classe para ativar o efeito de fade-in */
+    .fade-in-text.visible {
+      opacity: 1; /* Totalmente visível */
+      transform: translateY(0); /* Posição original */
+    }
 
 /* Animação de entrada */
 @keyframes fade-in {

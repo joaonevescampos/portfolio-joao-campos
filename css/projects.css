@@ -1,7 +1,6 @@
 .project-cover {
     position: relative;
     object-fit: cover;
-    max-height: 1200px;
 }
 
 .project-cover::before {

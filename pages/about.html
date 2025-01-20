@@ -6,34 +6,40 @@
     <title>Sobre mim</title>
     <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/social.css">
+
 </head>
-<body>
+<body class="transition-container">
+    <!-- about  -->
     <header>
+        <a href="../index.html" class="transition-link"><</a>
         <div class="profile-container">
             <div class="profile-info">
                 <p class="my-logo">JOÃO CAMPOS</p>
-                <a href="#" class="transition-link">Meu perfil</a>   
+                <a href="./about.html" class="transition-link">Meu perfil</a>   
             </div>
-            <a href="./pages/about.html" class="profile-circle">
-                <img src="../assets/img/perfil-portifolio.png" alt="foto de perfil" width="50px">
+            <a href="./about.html" class="profile-circle">
+                <img src="../assets/img/perfil-portifolio.png" alt="foto de perfil" width="40px">
             </a>
         </div>
     </header>
-     <!-- about  -->
-         <section class="about-section">
-            <div class="about-container">
-                <div class="photo-profile">
-                    <img src="../assets/img/perfil-portifolio.png" alt="foto de perfil">
-                </div>
-                <div class="about-content">
-                    <div>
-                        <h2>QUEM SOU EU?</h2>
-                        <hr class="orange-line" style="width: 200px;">
-                    </div>
-                    <p>Olá, sou João Campos, um engenheiro químico de 25 anos que está embarcando em uma empolgante transição para a profissão de desenvolvedor front-end. Com uma sólida formação em engenharia química, descobri minha verdadeira paixão pela tecnologia web e decidi mergulhar de cabeça nesse novo desafio.</p>
-                    <button class="orange-button">BAIXAR CV</button>
-                </div>
+    <section class="about-section about-cover">     
+        <div class="about-content">
+            <h2 class="fade-in-text">QUEM SOU EU?</h2>
+            <p class="fade-in-text">Olá, sou João Campos, um engenheiro químico que está embarcando em uma empolgante transição para a profissão de desenvolvedor front-end. Com uma sólida formação em engenharia química, descobri minha verdadeira paixão pela tecnologia web e decidi mergulhar de cabeça nesse novo desafio.</p>
+            <p class="fade-in-text">Meu fascínio por interfaces responsivas com design atraente me levar a me especializar no desenvolvimento frontend, porém também tenho noções de design e desenvolvimento backend.</p>
+            <div>
+                <button class=" fade-in-text">Baixar CV</button>
+                     <div class="social-medias">
+        <a href=""><img src="../assets/img/social/linkedin.svg" alt="linkedin"></a>
+        <a href=""><img src="../assets/img/social/github.svg" alt="github"></a>
+        <a href=""><img src="../assets/img/social/whatsapp.svg" alt="whatsapp"></a>
+    </div>
             </div>
-         </section>
+        </div>
+    </section>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>

@@ -1,31 +1,46 @@
 header {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 0 30px;
     background-color: #000;
     height: 100px;
-    font-family: 'Josefin Sans';
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 30px;
 }
 
 header > .profile-container {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 header > .profile-container > .profile-info {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 5px;
 }
 
-header > .profile-container > .profile-circle{
+header > .profile-container > .profile-info > p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header > .profile-container > .profile-info > a {
+    font-size: 12px;
+}
+
+header > .profile-container > .profile-circle {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #C0760D;
-    width: 60px;
-    height: 60px;
+    background-color: #888888;
+    width: 50px;
+    height: 50px;
 }
