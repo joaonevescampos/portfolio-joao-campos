@@ -1,4 +1,4 @@
-.project-cover {
+/* .project-cover {
     position: relative;
     object-fit: cover;
 }
@@ -9,21 +9,52 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.85);
+} */
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 40px 0 80px;
 }
 
-.project-cover > .project-cover-img {
-    width: 100vw;
-    max-height: 1200px;
-    object-fit: cover;
+.splide > .splide__track > ul {
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.splide > .splide__track > ul > li {
+    background-color: rgb(36, 36, 36);
+    height: 450px;
+    /* width: 500px; */
+    /* margin-left: 40px; */
     
 }
 
-.projects-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Poppins', sans-serif;
-    width: 80%;
-    max-width: 1200px;
+.splide > .splide__track > ul > li:hover{
+    transition: ease 1s;
+    scale: 1.3;
+    z-index: 999;
+}
+
+.splide > .splide__track > ul > li > img{
+    width: 100%;
+    /* min-height: 200px; */
+    object-fit: cover;
+}
+
+.splide > .splide__track > ul > li > .project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.splide > .splide__track > ul > li > .project-info > h2 {
+    font-size: 16px;
+}
+
+.splide > .splide__track > ul > li > .project-info > p {
+    font-size: 12px;
 }
