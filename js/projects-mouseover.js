@@ -18,9 +18,12 @@ slides.forEach((slide) => {
 
 slides.forEach((slide) => {
     slide.addEventListener('mouseout', () => {
-         slides.forEach((everySlide) => {
-             everySlide.style.filter = 'blur(0)';
-             everySlide.style.opacity = '1';
+        slides.forEach((everySlide) => {
+            everySlide.style.filter = 'blur(0)';
+            everySlide.style.opacity = '1';
         });
     });
 });
+
+        
+
