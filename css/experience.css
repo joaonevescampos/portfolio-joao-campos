@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 100%;
   width: 100%;
   padding: 30px 100px;
   box-sizing: border-box;
@@ -30,8 +30,8 @@
 .time-line {
   position: relative;
   width: 85%;
-  max-width: 1000px;
-  background-color: #da9b42;
+  max-width: 1200px;
+  background: linear-gradient(to right, black, orange);
   height: 5px;
   margin: auto;
 }
@@ -42,7 +42,7 @@
   left: -5px;
   width: 20px;
   height: 20px;
-  background-color: #da9b42;
+  background-color: rgb(32, 32, 32);
   border-radius: 50%;
 }
 
@@ -53,7 +53,7 @@
   transform: translateX(-50%);
   width: 20px;
   height: 20px;
-  background-color: #da9b42;
+  background-color: rgb(128, 77, 36);
   border-radius: 50%;
 }
 
@@ -63,14 +63,14 @@
   right: -5px;
   width: 20px;
   height: 20px;
-  background-color: #da9b42;
+  background-color: orange;
   border-radius: 50%;
 }
 
 .dates {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 50px;
   box-sizing: border-box;
 }
 
@@ -86,4 +86,67 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 50px 20px;
+    margin: 50px auto 0 auto;
+    width: 360px;
+
+  }
+
+  .experience-section > div > .time-line-container {
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px 0;
+  }
+
+  .time-line {
+    width: 5%;
+    max-width: none;
+    background: linear-gradient(to top, black, orange);
+    height: 500px;
+    margin: 20px;
+  }
+
+  .point1 {
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+  }
+
+  .point2 {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgb(128, 77, 36);
+  }
+
+  .point3 {
+    top: 100%;
+    transform: translate(50%, -20px);
+    right: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(32, 32, 32);
+
+  }
+
+  .dates {
+    flex-direction: column-reverse;
+    padding: 0 20px;
+  }
+
+  .job-infos {
+    flex-direction: column-reverse;
+    font-size: 14px;
+
+  }
+
 }
