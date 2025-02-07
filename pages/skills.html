@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/skills.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body class="transition-container">
     <header>
@@ -22,23 +23,38 @@
         </div>
     </header>
     <!-- habilidades  -->
+
     <section class="skills-section">
-    <div>
-        <h2>HABILIDADES</h2>
-        <hr class="orange-line" style="width: 200px;">
-    </div>
-    <div class="skills-container">
-        <div class="skill"><p>FRONTEND</p></div>
-        <div class="skill"><p>BACKEND</p></div>
-        <div class="skill"><p>DESIGN</p></div>
-    </div>
-    <div class="skill-info-container">
-        <div class="skill-text">
-            <p>Possuo um amplo conhecimento prático das principais tecnologias requeridas por um desenvolvedor frontend, com vasto domínio principalmente das tecnologias HTML, CSS e React.</p>
-            <p>Tenho experiência profissional trabalhando como desenvolvedor frontend em empresas como Mundiware e Golab. São empresas na área de tecnologia responsáveis por criar sites de notícias responsíveis e dinâmicos.</p>
-            <p>Nelas, fiquei responsável em criar sites usando principalmente HTML, CSS e JavaScript, além da utilização de uma linguagem própria da empresa chamada MWTPL. Além disso, peguei demandas para manutenção de portais, criação de apps e versionamento constante de código usando Git.</p>
+    <!-- <h2>HABILIDADES</h2> -->
+    <div class="splide skills-splide">
+        <div class="splide__track">
+            <ul class="splide__list">    
+                <li class="skill-info-container splide__slide frontend">
+                    <div class="skill-text">
+                        <h1>FRONTEND</h1>
+                        <p>Possuo um amplo conhecimento prático das principais tecnologias requeridas por um desenvolvedor frontend, com vasto domínio principalmente das tecnologias HTML, CSS e React.</p>
+                        <p>Tenho experiência profissional trabalhando como desenvolvedor frontend em empresas como Mundiware e Golab. São empresas na área de tecnologia responsáveis por criar sites de notícias responsíveis e dinâmicos.</p>
+                        <p>Nelas, fiquei responsável em criar sites usando principalmente HTML, CSS e JavaScript, além da utilização de uma linguagem própria da empresa chamada MWTPL. Além disso, peguei demandas para manutenção de portais, criação de apps e versionamento constante de código usando Git.</p>
+                        <a href="./projects.html#frontend">Ver projetos frontend</a>
+                </li>
+                 <li class="skill-info-container splide__slide backend">
+                    <div class="skill-text">
+                        <h1>FRONTEND</h1>
+                        <p>Possuo um amplo conhecimento prático das principais tecnologias requeridas por um desenvolvedor frontend, com vasto domínio principalmente das tecnologias HTML, CSS e React.</p>
+                        <p>Tenho experiência profissional trabalhando como desenvolvedor frontend em empresas como Mundiware e Golab. São empresas na área de tecnologia responsáveis por criar sites de notícias responsíveis e dinâmicos.</p>
+                        <p>Nelas, fiquei responsável em criar sites usando principalmente HTML, CSS e JavaScript, além da utilização de uma linguagem própria da empresa chamada MWTPL. Além disso, peguei demandas para manutenção de portais, criação de apps e versionamento constante de código usando Git.</p>
+                </li>
+                 <li class="skill-info-container splide__slide fullstack">
+                    <div class="skill-text">
+                        <h1>FRONTEND</h1>
+                        <p>Possuo um amplo conhecimento prático das principais tecnologias requeridas por um desenvolvedor frontend, com vasto domínio principalmente das tecnologias HTML, CSS e React.</p>
+                        <p>Tenho experiência profissional trabalhando como desenvolvedor frontend em empresas como Mundiware e Golab. São empresas na área de tecnologia responsáveis por criar sites de notícias responsíveis e dinâmicos.</p>
+                        <p>Nelas, fiquei responsável em criar sites usando principalmente HTML, CSS e JavaScript, além da utilização de uma linguagem própria da empresa chamada MWTPL. Além disso, peguei demandas para manutenção de portais, criação de apps e versionamento constante de código usando Git.</p>
+                </li>
+            </ul>
         </div>
-        <div class="skill-tecnologies">
+    </div>
+        <!-- <div class="skill-tecnologies">
             <div>
                 <p>HTML</p>
                 <div class="skill-level" style="width: 95%;"></div>
@@ -71,8 +87,10 @@
                 <p>Github</p>
                 <div class="skill-level" style="width: 85%;"></div>
             </div>
-        </div>
+        </div> -->
     </div>
     </section>
+     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+     <script src="../js/skills-splide.js"></script>
 </body>
 </html>
