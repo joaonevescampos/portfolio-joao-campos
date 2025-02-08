@@ -66,7 +66,7 @@
 }
 
 .splide > .splide__track > ul > li:hover {
-  transition: ease 1s;
+  transition: ease .5s;
   scale: 1.2;
   z-index: 999;
 }
@@ -223,5 +223,13 @@
     right: -20px !important;
     width: 20px !important;
     height: 40px !important;
+  }
+
+  .shadow-effect-left {
+    width: 50px;
+  }
+
+  .shadow-effect-right {
+    width: 50px;
   }
 }

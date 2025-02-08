@@ -7,6 +7,8 @@ new Splide('.splide.skills-splide', {
     arrows: true,
     easing: 'ease',
     speed: 1500,
+    breakpoints: {
+    }
     
 }).mount();
 x.style.display = "inherit";
