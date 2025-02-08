@@ -23,11 +23,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 560px;
+  height: auto !important;
+  margin: 50px 0 !important;
 }
 
 .splide__list-backend {
-  height: 300px !important;
+  height: 440px !important;
 }
 
 .shadow-effect-left {
