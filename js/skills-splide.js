@@ -6,7 +6,7 @@ new Splide('.splide.skills-splide', {
     gap: '20px',
     arrows: true,
     easing: 'ease',
-    speed: 1500,
+    speed: 1000,
     breakpoints: {
     }
     

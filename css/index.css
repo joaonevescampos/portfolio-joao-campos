@@ -1,221 +1,182 @@
 .cover-desktop {
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    color: #d4cd8c;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    transition: ease 1s;
-    overflow: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: ease 1s;
 }
 
 .cover-desktop img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    overflow: hidden;
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .cover-desktop::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
-    z-index: 1;
-    overflow: hidden;
-
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111111a1;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .index-content {
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .index-content h1 {
-    font-size: 40px;
-    font-weight: 500;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .index-content > .index-options {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .index-content > .index-options > button {
-    position: relative;
-    color: #000000;
-    font-size: 20px;
-    font-weight: bold;
-    transition: ease 1s;
-    border: none;
-    width: 200px;
-    height: 400px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 50px #ffffff42;
-    cursor: pointer;
+  position: relative;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  transition: ease 1s;
+  border: none;
+  width: 200px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 50px #ffffff42;
+  cursor: pointer;
 }
 
 .index-content > .index-options > button:hover {
-    opacity: 1;
-    filter: blur(0);
-    scale: 1.4;
-    box-shadow: 5px 5px 50px #ffffff94;
-    z-index: 4;
+  opacity: 1;
+  filter: blur(0);
+  scale: 1.4;
+  box-shadow: 5px 5px 50px #ffffff94;
+  z-index: 4;
 }
 
 .index-content > .index-options > button > a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 18px;
-    z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  z-index: 3;
 }
 
 .index-content > .index-options > button > a > div {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    width: 100%;
-    height: fit-content;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  height: fit-content;
 }
 
 .index-content > .index-options > button > a > div > span {
-    font-weight: 900;
-    color: #ffffff;
-    text-align: center;
-    width: 100%;
-    height: fit-content;
-    background-color: #0000008c;
-    padding: 5px;
-    box-sizing: border-box;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  background-color: #0000008c;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
-.index-content > .index-options > button::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    border-radius: 10px;
+.index-content > .index-options > button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 10px;
 }
 
-.index-content > .index-options > button:hover::after{
-    background-color: rgba(0, 0, 0, 0);
+.index-content > .index-options > button:hover::after {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .index-content > .index-options > .btn-contact {
-    background-image: url('../assets/img/backgrounds/about-novo.png');
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../assets/img/backgrounds/about-novo.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .index-content > .index-options > .btn-experience {
-     background-image: url('../assets/img/backgrounds/experience-novo.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../assets/img/backgrounds/experience-novo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .index-content > .index-options > .btn-skills {
-     background-image: url('../assets/img/backgrounds/skill-novo.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../assets/img/backgrounds/skill-novo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 
 .index-content > .index-options > .btn-projects {
-     background-image: url('../assets/img/backgrounds/projects-novo.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../assets/img/backgrounds/projects-novo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.index-content > .index-options > .btn-projects:hover a, .index-content > .index-options > .btn-contact:hover a, .index-content > .index-options >.btn-skills:hover a, .index-content > .index-options > .btn-experience:hover a {
-    transition: ease-in-out 1s;
-    font-size: 24px;
+.index-content > .index-options > .btn-projects:hover a,
+.index-content > .index-options > .btn-contact:hover a,
+.index-content > .index-options > .btn-skills:hover a,
+.index-content > .index-options > .btn-experience:hover a {
+  transition: ease-in-out 1s;
+  font-size: 24px;
 }
 
 @media (max-width: 768px) {
-    .cover-desktop {
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    color: #d4cd8c;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    transition: ease 1s;
-    overflow: hidden;
-}
+  .index-content {
+    min-height: 700px;
+  }
 
-.cover-desktop img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    overflow: hidden;
-
-}
-
-.cover-desktop::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
-    z-index: 1;
-    overflow: hidden;
-
-}
-
-.index-content {
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.index-content h1 {
-    font-size: 40px;
+  .index-content h1 {
+    font-size: 24px;
     font-weight: 500;
-}
+    text-align: center;
+  }
 
-.index-content > .index-options {
+  .index-content > .index-options {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 30px;
-}
+  }
 
-.index-content > .index-options > button {
+  .index-content > .index-options > button {
     position: relative;
     color: #000000;
     font-size: 20px;
@@ -223,21 +184,21 @@
     transition: ease 1s;
     border: none;
     width: 300px;
-    height: 100px;
+    height: 120px;
     border-radius: 10px;
     box-shadow: 5px 5px 50px #ffffff42;
     cursor: pointer;
-}
+  }
 
-.index-content > .index-options > button:hover {
+  .index-content > .index-options > button:hover {
     opacity: 1;
     filter: blur(0);
     scale: 1.4;
     box-shadow: 5px 5px 50px #ffffff94;
     z-index: 4;
-}
+  }
 
-.index-content > .index-options > button > a {
+  .index-content > .index-options > button > a {
     position: absolute;
     top: 0;
     left: 0;
@@ -245,9 +206,9 @@
     height: 100%;
     font-size: 18px;
     z-index: 3;
-}
+  }
 
-.index-content > .index-options > button > a > div {
+  .index-content > .index-options > button > a > div {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -258,9 +219,9 @@
     gap: 5px;
     width: 100%;
     height: fit-content;
-}
+  }
 
-.index-content > .index-options > button > a > div > span {
+  .index-content > .index-options > button > a > div > span {
     font-weight: 900;
     color: #ffffff;
     text-align: center;
@@ -269,10 +230,10 @@
     background-color: #0000008c;
     padding: 5px;
     box-sizing: border-box;
-}
+  }
 
-.index-content > .index-options > button::after{
-    content: '';
+  .index-content > .index-options > button::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -281,43 +242,45 @@
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
     border-radius: 10px;
-}
+  }
 
-.index-content > .index-options > button:hover::after{
+  .index-content > .index-options > button:hover::after {
     background-color: rgba(0, 0, 0, 0);
-}
+  }
 
-.index-content > .index-options > .btn-contact {
-    background-image: url('../assets/img/backgrounds/about-novo.png');
+  .index-content > .index-options > .btn-contact {
+    background-image: url("../assets/img/backgrounds/about-novo.png");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
-}
+  }
 
-.index-content > .index-options > .btn-experience {
-     background-image: url('../assets/img/backgrounds/experience-novo.png');
+  .index-content > .index-options > .btn-experience {
+    background-image: url("../assets/img/backgrounds/experience-novo.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+  }
 
-.index-content > .index-options > .btn-skills {
-     background-image: url('../assets/img/backgrounds/skill-novo.png');
+  .index-content > .index-options > .btn-skills {
+    background-image: url("../assets/img/backgrounds/skill-novo.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+  }
 
-
-.index-content > .index-options > .btn-projects {
-     background-image: url('../assets/img/backgrounds/projects-novo.png');
+  .index-content > .index-options > .btn-projects {
+    background-image: url("../assets/img/backgrounds/projects-novo.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+  }
 
-.index-content > .index-options > .btn-projects:hover a, .index-content > .index-options > .btn-contact:hover a, .index-content > .index-options >.btn-skills:hover a, .index-content > .index-options > .btn-experience:hover a {
+  .index-content > .index-options > .btn-projects:hover a,
+  .index-content > .index-options > .btn-contact:hover a,
+  .index-content > .index-options > .btn-skills:hover a,
+  .index-content > .index-options > .btn-experience:hover a {
     transition: ease-in-out 1s;
     font-size: 24px;
-}
+  }
 }
