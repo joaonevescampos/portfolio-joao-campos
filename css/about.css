@@ -47,7 +47,7 @@
 }
 
 .about-content .profile-photo {
-  width: 300px;
+  width: 350px;
   border-radius: 20px;
 }
 
@@ -88,6 +88,10 @@
     text-align: start;
     height: auto;
   }
+  .about-content .profile-photo {
+  width: 290px;
+  border-radius: 20px;
+}
   .about-content img {
     margin: auto;
     width: 300px;
