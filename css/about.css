@@ -63,6 +63,9 @@
 }
 
 .about-content .download-cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 150px;
   background-color: transparent;
   border: 1px solid #fff;
