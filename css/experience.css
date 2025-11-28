@@ -32,31 +32,45 @@
   position: relative;
   width: 85%;
   max-width: 1200px;
-  background: linear-gradient(to right, #242424, orange);
+  background: linear-gradient(to right, orange, #242424 );
   height: 5px;
   margin: auto;
 }
 
-.point1 {
+.point0 {
   position: absolute;
   top: -8px;
   left: -5px;
   width: 20px;
   height: 20px;
-  background-color: #242424;
   border-radius: 50%;
+  background-color: orange;
+
+}
+
+.point1 {
+  position: absolute;
+  top: -8px;
+  left: 33%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #B8710D;
+
 }
 
 .point2 {
   position: absolute;
   top: -8px;
-  left: 50%;
+  left: 66%;
   transform: translateX(-50%);
   width: 20px;
   height: 20px;
-  background-color: rgb(128, 77, 36);
+  background-color: #6C4E18;
+
   border-radius: 50%;
 }
+
 
 .point3 {
   position: absolute;
@@ -64,10 +78,10 @@
   right: -5px;
   width: 20px;
   height: 20px;
-  background-color: orange;
+  background-color: #242424;
+
   border-radius: 50%;
 }
-
 .dates {
   display: flex;
   justify-content: space-between;
@@ -110,22 +124,32 @@
     margin: 20px;
   }
 
-  .point1 {
+    .point0 {
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
     width: 40px;
     height: 40px;
-    background-color: orange;
+    /* background-color: orange; */
   }
 
-  .point2 {
-    top: 50%;
+
+  .point1 {
+    top: 33%;
     left: 50%;
     transform: translateX(-50%);
     width: 40px;
     height: 40px;
-    background-color: rgb(128, 77, 36);
+    /* background-color: orange; */
+  }
+
+  .point2 {
+    top: 66%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    /* background-color: #956612; */
   }
 
   .point3 {
@@ -134,8 +158,7 @@
     right: 50%;
     width: 40px;
     height: 40px;
-    background-color: #242424;
-
+    /* background-color: #242424; */
   }
 
   .dates {
@@ -144,7 +167,7 @@
   }
 
   .job-infos {
-    flex-direction: column-reverse;
+    flex-direction: column;
     font-size: 14px;
 
   }

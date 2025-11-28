@@ -65,10 +65,11 @@
   border-radius: 5px;
   margin-left: 40px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .splide > .splide__track > ul > li:hover {
-  transition: ease .5s;
+  transition: ease 0.5s;
   scale: 1.2;
   z-index: 999;
 }
@@ -76,6 +77,9 @@
 .splide > .splide__track > ul > li > img {
   width: 100%;
   object-fit: cover;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+
 }
 
 .splide > .splide__track > ul > li > .project-info {
@@ -170,9 +174,20 @@
   height: 60px !important;
 }
 
+@media (max-width: 1800px) {
+
+  .splide > .splide__track > ul > li > img {
+    height: 180px;
+  }
+}
+
 @media (max-width: 1400px) {
   .splide > .splide__track > ul {
     height: 450px;
+  }
+
+  .splide > .splide__track > ul > li > img {
+    height: 150px;
   }
 }
 
@@ -184,6 +199,10 @@
     transition: ease 1s;
     scale: 1.1;
     z-index: 999;
+  }
+
+    .splide > .splide__track > ul > li > img {
+    height: 150px;
   }
 }
 
@@ -205,6 +224,10 @@
 
   .splide > .splide__track > ul > li:hover {
     scale: 1;
+  }
+
+      .splide > .splide__track > ul > li > img {
+    height: 120px;
   }
 
   .splide__arrow--prev {

@@ -16,7 +16,7 @@ new Splide('.splide.projects-the-bests', {
         468: { perPage: 1 },
     },
     easing: 'ease',
-    speed: 1000,
+    speed: 500,
     
 }).mount();
 x.style.display = "inherit";
@@ -40,7 +40,7 @@ new Splide('.splide.projects-frontend', {
         468: { perPage: 1 },
     },
     easing: 'ease',
-    speed: 1000,
+    speed: 500,
     
 }).mount();
 x.style.display = "inherit";
@@ -64,7 +64,7 @@ new Splide('.splide.projects-fullstack', {
         468: { perPage: 1 },
     },
     easing: 'ease',
-    speed: 1000,
+    speed: 500,
     
 }).mount();
 x.style.display = "inherit";
@@ -89,7 +89,7 @@ new Splide('.splide.projects-backend', {
         468: { perPage: 1 },
     },
     easing: 'ease',
-    speed: 1000,
+    speed: 500,
     
 }).mount();
 x.style.display = "inherit";

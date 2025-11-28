@@ -11,7 +11,7 @@ header {
 }
 
 header {
-    font-size: 30px;
+    font-size: 22px;
 }
 
 header > .profile-container {
@@ -40,7 +40,8 @@ header > .profile-container > .profile-circle {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #e0a502;
+    background-image: linear-gradient(to bottom, #b6e2fc, #585858);
+    color: #000;
     width: 50px;
     height: 50px;
 }

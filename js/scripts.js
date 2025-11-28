@@ -11,7 +11,7 @@ links.forEach(link => {
     // Aguarda o tempo da animação antes de redirecionar
     setTimeout(() => {
       window.location.href = this.href; // Redireciona para o destino
-    }, 500); // Corresponde ao tempo da animação (0.5s)
+    }, 200); // Corresponde ao tempo da animação (0.2s)
   });
 });
 
