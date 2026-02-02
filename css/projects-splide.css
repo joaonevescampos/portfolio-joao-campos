@@ -3,12 +3,14 @@
 }
 .splide__track {
   width: 100%;
-  overflow: visible;
+
+  /* overflow: visible!important; */
+
 }
 .splide__list {
   padding: 0;
   display: flex;
-  gap: 0px;
+  /* gap: 0px !important; */
   align-items: center;
   overflow: visible;
 }
