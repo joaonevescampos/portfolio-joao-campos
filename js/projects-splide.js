@@ -2,18 +2,19 @@ document.addEventListener('DOMContentLoaded', function () {
 new Splide('.splide.projects-the-bests', {
     type: 'slide',
     perPage: 5,
+    perMove: 1,
     pagination: false,
     gap: '10px',
     arrows: true,
     breakpoints: {
-        1400: {
+        2200: {
             perPage: 4,
          },
-        1200: {
+        1600: {
             perPage: 3,
         },
-        768: { perPage: 2 },
-        468: { perPage: 1 },
+        1200: { perPage: 2 },
+        768: { perPage: 1 },
     },
     easing: 'ease',
     speed: 500,
@@ -29,15 +30,15 @@ new Splide('.splide.projects-frontend', {
     pagination: false,
     gap: '20px',
     arrows: true,
-    breakpoints: {
-        1400: {
+      breakpoints: {
+        2200: {
             perPage: 4,
          },
-        1200: {
+        1600: {
             perPage: 3,
         },
-        768: { perPage: 2 },
-        468: { perPage: 1 },
+        1200: { perPage: 2 },
+        768: { perPage: 1 },
     },
     easing: 'ease',
     speed: 500,
@@ -53,15 +54,15 @@ new Splide('.splide.projects-fullstack', {
     pagination: false,
     gap: '10px',
     arrows: true,
-    breakpoints: {
-        1400: {
+       breakpoints: {
+        2200: {
             perPage: 4,
          },
-        1200: {
+        1600: {
             perPage: 3,
         },
-        768: { perPage: 2 },
-        468: { perPage: 1 },
+        1200: { perPage: 2 },
+        768: { perPage: 1 },
     },
     easing: 'ease',
     speed: 500,
@@ -78,15 +79,15 @@ new Splide('.splide.projects-backend', {
     pagination: false,
     gap: '10px',
     arrows: true,
-    breakpoints: {
-        1400: {
+       breakpoints: {
+        2200: {
             perPage: 4,
          },
-        1200: {
+        1600: {
             perPage: 3,
         },
-        768: { perPage: 2 },
-        468: { perPage: 1 },
+        1200: { perPage: 2 },
+        768: { perPage: 1 },
     },
     easing: 'ease',
     speed: 500,

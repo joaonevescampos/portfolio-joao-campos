@@ -1,26 +1,19 @@
 .splide {
-  overflow: visible !important; /* Garante que nada fora do carrossel seja exibido */
+  overflow: visible !important;
 }
 .splide__track {
   width: 100%;
-  height: 600px;
-
   overflow: visible;
 }
 .splide__list {
-  margin-left: 100px; /* Remove qualquer margem extra nos slides */
   padding: 0;
-
   display: flex;
+  gap: 0px;
   align-items: center;
   overflow: visible;
-
-  /* justify-content: center; */
 }
 
-/* Central slide maior, sem sombra */
 .splide__slide.is-active {
-  transform: scale(1.5);
   filter: blur(0);
   box-shadow: none;
   z-index: 2;
@@ -28,7 +21,6 @@
   padding: 0;
 }
 
-/* Slides ao lado - menores, com desfoque e sombra */
 .splide__slide {
   position: relative;
   text-align: center;
@@ -38,26 +30,20 @@
   box-sizing: border-box;
   margin: 0 !important;
   padding: 0 !important;
-  transform: scale(0.8);
-  /* transform: translateY(50%); */
+  transform: scale(0.9);
   filter: blur(3px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   z-index: 1;
-  width: 80%;
-  height: 60%;
+  width: 100%;
   background-color: transparent;
   box-sizing: border-box;
   margin: 0 !important;
   padding: 0 !important;
 }
 
-/* Slides invisíveis fora do viewport */
 .splide__slide:not(.is-active) {
   opacity: 0.2;
   margin: 0;
   padding: 0;
 }
 
-.splide__pagination__page {
-  top: 100px;
-}
