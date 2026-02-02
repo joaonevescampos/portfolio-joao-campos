@@ -32,7 +32,7 @@
   position: relative;
   width: 85%;
   max-width: 1200px;
-  background: linear-gradient(to right, orange, #242424 );
+  background: linear-gradient(to right, rgb(77, 231, 252), #242424);
   height: 5px;
   margin: auto;
 }
@@ -44,8 +44,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: orange;
-
+  background-color: rgb(77, 231, 252);
 }
 
 .point1 {
@@ -55,8 +54,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #B8710D;
-
+  background-color: #40a7b5;
 }
 
 .point2 {
@@ -66,11 +64,10 @@
   transform: translateX(-50%);
   width: 20px;
   height: 20px;
-  background-color: #6C4E18;
+  background-color: #446468;
 
   border-radius: 50%;
 }
-
 
 .point3 {
   position: absolute;
@@ -107,7 +104,6 @@
     padding: 50px 20px;
     margin: 50px auto 0 auto;
     width: 360px;
-
   }
 
   .experience-section > div > .time-line-container {
@@ -119,20 +115,18 @@
   .time-line {
     width: 5%;
     max-width: none;
-    background: linear-gradient(to top, #242424, orange);
+    background: linear-gradient(to top, #242424, rgb(77, 231, 252));
     height: 500px;
     margin: 20px;
   }
 
-    .point0 {
+  .point0 {
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
     width: 40px;
     height: 40px;
-    /* background-color: orange; */
   }
-
 
   .point1 {
     top: 33%;
@@ -140,7 +134,6 @@
     transform: translateX(-50%);
     width: 40px;
     height: 40px;
-    /* background-color: orange; */
   }
 
   .point2 {
@@ -149,7 +142,6 @@
     transform: translateX(-50%);
     width: 40px;
     height: 40px;
-    /* background-color: #956612; */
   }
 
   .point3 {
@@ -158,7 +150,6 @@
     right: 50%;
     width: 40px;
     height: 40px;
-    /* background-color: #242424; */
   }
 
   .dates {
@@ -169,7 +160,5 @@
   .job-infos {
     flex-direction: column;
     font-size: 14px;
-
   }
-
 }
