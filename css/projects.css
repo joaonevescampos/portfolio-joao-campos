@@ -1,3 +1,7 @@
+.projects-section {
+  margin-bottom: 50px;
+}
+
 .projects-content {
   display: flex;
   flex-direction: column;
