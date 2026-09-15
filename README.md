@@ -1,5 +1,29 @@
 # Portfólio - João Campos
 
-O propósito deste portfolio é demonstrar visualmente minhas habilidades profissionais de forma elegante e moderna, oferencendo uma experiência agradável ao usuário que navegar no site.
+Portfólio pessoal migrado para React, Vite, TypeScript e Tailwind CSS.
 
-Espero que goste! :)
+## Desenvolvimento
+
+```bash
+npm install
+npm run dev
+```
+
+Para validar o bundle de produção:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Rotas
+
+- `/` - navegação principal
+- `/about` - sobre mim
+- `/experience` - experiência profissional
+- `/skills` - habilidades
+- `/projects` - projetos e links externos
+
+## Arquitetura
+
+A aplicação vive em `src/`, organizada em `assets`, `components`, `hooks`, `layouts`, `pages`, `routes`, `services`, `styles`, `types` e `utils`. Os conteúdos repetidos de projetos e habilidades estão tipados e centralizados em `services/portfolioData.ts`.
