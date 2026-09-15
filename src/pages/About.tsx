@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import profilePhoto from '../assets/img/perfil-portifolio2.jpg'
+import profilePhoto from '../assets/img/perfil-portfolio.png'
 import curriculum from '../assets/img/curriculo-joao-campos.pdf'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
 
