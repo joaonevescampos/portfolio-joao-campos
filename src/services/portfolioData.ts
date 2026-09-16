@@ -1,4 +1,3 @@
-import type { NavigationItem } from '../types/navigation'
 import type { Project, Skill } from '../types/portfolio'
 
 import aboutBackground from '../assets/img/backgrounds/about-novo.png'
@@ -19,13 +18,6 @@ import pontoLocalImage from '../assets/img/projects/ponto-local.png'
 import boardImage from '../assets/img/projects/new-board.png'
 import cucaflowImage from '../assets/img/projects/cucaflow.png'
 import pokegymImage from '../assets/img/projects/pokegym.png'
-
-export const navigationItems: NavigationItem[] = [
-  { label: 'SOBRE', path: '/about', background: aboutBackground, className: 'from-cyan-950/80' },
-  { label: 'EXPERIÊNCIA', path: '/experience', background: experienceBackground, className: 'from-sky-950/80' },
-  { label: 'HABILIDADES', path: '/skills', background: skillsBackground, className: 'from-indigo-950/80' },
-  { label: 'PROJETOS', path: '/projects', background: projectsBackground, className: 'from-slate-950/80' },
-]
 
 export const skills: Skill[] = [
   {

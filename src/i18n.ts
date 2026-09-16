@@ -95,18 +95,6 @@ const resources = {
         description:
           'Tenho interesse em projetos de frontend, produto digital, experiências premium e desenvolvimento com base técnica sólida.',
       },
-      stack: {
-        title: 'Stack principal',
-      },
-      technology: {
-        react: 'React',
-        typescript: 'TypeScript',
-        next: 'Next.js',
-        node: 'Node.js',
-        tailwind: 'Tailwind',
-        postgres: 'PostgreSQL',
-      },
-      language: 'Idioma',
     },
   },
   en: {
@@ -174,18 +162,6 @@ const resources = {
         description:
           'I am interested in frontend projects, digital products, premium experiences and development with strong technical foundations.',
       },
-      stack: {
-        title: 'Main stack',
-      },
-      technology: {
-        react: 'React',
-        typescript: 'TypeScript',
-        next: 'Next.js',
-        node: 'Node.js',
-        tailwind: 'Tailwind',
-        postgres: 'PostgreSQL',
-      },
-      language: 'Language',
     },
   },
   es: {
@@ -253,18 +229,6 @@ const resources = {
         description:
           'Tengo interés en proyectos de frontend, producto digital, experiencias premium y desarrollo con una base técnica sólida.',
       },
-      stack: {
-        title: 'Stack principal',
-      },
-      technology: {
-        react: 'React',
-        typescript: 'TypeScript',
-        next: 'Next.js',
-        node: 'Node.js',
-        tailwind: 'Tailwind',
-        postgres: 'PostgreSQL',
-      },
-      language: 'Idioma',
     },
   },
 }
