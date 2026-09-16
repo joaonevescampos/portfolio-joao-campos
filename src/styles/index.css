@@ -626,7 +626,7 @@ body[data-theme='light'] .project-button.secondary {
   letter-spacing: -0.06em;
 }
 
-#about {
+.client-page #about {
   display: flex;
   justify-content: center;
   margin: auto;
