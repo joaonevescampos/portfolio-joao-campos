@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { socialLinks } from '../utils/links'
 
 const navItems = [
   { labelKey: 'nav.about', href: '#about' },
@@ -14,15 +15,18 @@ export function Header({
   language,
   onToggleTheme,
   onChangeLanguage,
+  clientMode = false,
 }: {
   isLight: boolean
   language: 'pt' | 'en' | 'es'
   onToggleTheme: () => void
   onChangeLanguage: (language: 'pt' | 'en' | 'es') => void
+  clientMode?: boolean
 }) {
   const { t } = useTranslation()
   const [activeSection, setActiveSection] = useState('about')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const visibleNavItems = clientMode ? navItems.filter((item) => item.href === '#projects' || item.href === '#about') : navItems
 
   useEffect(() => {
     const updateActiveSection = () => {
@@ -37,7 +41,7 @@ export function Header({
   }, [])
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--header-bg)]/80 backdrop-blur-xl transition-[background-color,border-color] duration-[3000ms] ease-in-out">
+    <header className={`sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--header-bg)]/80 backdrop-blur-xl transition-[background-color,border-color] duration-[3000ms] ease-in-out ${clientMode ? 'client-header' : ''}`}>
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-4 md:px-8">
         <a href="#top" aria-label="Voltar para o início" className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-[var(--text)] transition-colors hover:text-[var(--accent)]">
           <span className="grid h-9 w-9 place-items-center rounded-full border border-[var(--border)] bg-[var(--panel)] text-sm font-bold text-[var(--text)]">JC</span>
@@ -45,7 +49,7 @@ export function Header({
         </a>
 
         <nav className="hidden items-center gap-6 lg:flex">
-          {navItems.map((item) => (
+          {visibleNavItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
@@ -80,6 +84,8 @@ export function Header({
             ))}
           </div>
 
+          {clientMode && <a className="header-whatsapp" href={socialLinks.find((link) => link.label === 'WhatsApp')?.href} target="_blank" rel="noreferrer">WhatsApp ↗</a>}
+
           <button
             type="button"
             onClick={onToggleTheme}
@@ -106,7 +112,7 @@ export function Header({
       {isMenuOpen && (
         <div id="mobile-navigation" className="mobile-navigation lg:hidden">
           <nav className="mx-auto grid max-w-7xl gap-2 px-4 pb-4 pt-2 sm:px-8">
-            {navItems.map((item) => (
+            {visibleNavItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { SiReact, SiTypescript, SiNextdotjs, SiNodedotjs, SiTailwindcss, SiPostgresql, SiMongodb, SiPrisma, SiGit, SiFigma, SiOpenjdk } from 'react-icons/si'
 import backgroundVideo from '../assets/video/background-video.mp4'
@@ -130,6 +131,7 @@ export function Home() {
         transition={{ duration: 0.8, ease: 'easeOut' }}
         className="hero-shell relative isolate flex min-h-screen items-center overflow-hidden border-b border-[var(--border)]"
       >
+        <Link className="hero-home-back" to="/">← HOME</Link>
         <video
           className="absolute inset-0 h-full w-full scale-110 object-cover opacity-75"
           src={backgroundVideo}
