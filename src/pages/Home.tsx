@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { SiReact, SiTypescript, SiNextdotjs, SiNodedotjs, SiTailwindcss, SiPostgresql, SiMongodb, SiPrisma, SiGit, SiFigma, SiOpenjdk } from 'react-icons/si'
@@ -6,6 +6,7 @@ import backgroundVideo from '../assets/video/background-video.mp4'
 import profilePhoto from '../assets/img/perfil-portfolio.png'
 import curriculum from '../assets/img/curriculo-joao-campos.pdf'
 import { ProjectCard } from '../components/ProjectCard'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion'
 import { projectGroups, skills } from '../services/portfolioData'
 import { socialLinks } from '../utils/links'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
@@ -59,8 +60,9 @@ export function Home() {
   useDocumentTitle('João Campos | Frontend Developer')
   const [visibleProjects, setVisibleProjects] = useState(1)
   const [isProjectsPaused, setIsProjectsPaused] = useState(false)
-  const [projectDirection, setProjectDirection] = useState(1)
-  const [projectSpeed, setProjectSpeed] = useState(1)
+  const [projectIndex, setProjectIndex] = useState(projects.length)
+  const [projectTransition, setProjectTransition] = useState(true)
+  const projectTouchStart = useRef<number | null>(null)
 
   useEffect(() => {
     const updateVisibleProjects = () => {
@@ -72,9 +74,45 @@ export function Home() {
     return () => window.removeEventListener('resize', updateVisibleProjects)
   }, [])
 
+  useEffect(() => {
+    if (isProjectsPaused) return
+
+    const interval = window.setInterval(() => {
+      setProjectIndex((current) => current + 1)
+    }, 10000)
+
+    return () => window.clearInterval(interval)
+  }, [isProjectsPaused])
+
   const moveProjects = (direction: 1 | -1) => {
-    setProjectDirection(direction)
-    setProjectSpeed((current) => Math.min(current + 1, 3))
+    setProjectTransition(true)
+    setProjectIndex((current) => current + direction)
+  }
+
+  const resetProjectLoop = () => {
+    if (projectIndex >= projects.length * 2) {
+      setProjectTransition(false)
+      setProjectIndex(projects.length)
+    }
+
+    if (projectIndex < projects.length) {
+      setProjectTransition(false)
+      setProjectIndex(projects.length * 2 - 1)
+    }
+  }
+
+  const handleProjectPointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    projectTouchStart.current = event.clientX
+    setIsProjectsPaused(true)
+  }
+
+  const handleProjectPointerUp = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (projectTouchStart.current === null) return
+
+    const distance = event.clientX - projectTouchStart.current
+    if (Math.abs(distance) > 40) moveProjects(distance > 0 ? -1 : 1)
+    projectTouchStart.current = null
+    setIsProjectsPaused(false)
   }
 
   const stats = [
@@ -209,17 +247,24 @@ export function Home() {
           className="project-carousel"
           onMouseEnter={() => setIsProjectsPaused(true)}
           onMouseLeave={() => setIsProjectsPaused(false)}
+          onPointerDown={handleProjectPointerDown}
+          onPointerUp={handleProjectPointerUp}
+          onPointerCancel={() => {
+            projectTouchStart.current = null
+            setIsProjectsPaused(false)
+          }}
         >
           <div className="project-carousel-viewport">
             <div
-              className={`project-carousel-track ${projectDirection === -1 ? 'reverse' : ''} ${isProjectsPaused ? 'paused' : ''}`}
+              className={`project-carousel-track ${projectTransition ? 'is-transitioning' : ''}`}
+              onTransitionEnd={resetProjectLoop}
               style={{
-                width: `${(projects.length * 2 * 100) / visibleProjects}%`,
-                '--project-speed': `${58 / projectSpeed}s`,
-                '--project-total': projects.length * 2,
+                width: `${(projects.length * 3 * 100) / visibleProjects}%`,
+                '--project-total': projects.length * 3,
+                transform: `translateX(-${projectIndex * (100 / (projects.length * 3))}%)`,
               } as React.CSSProperties}
             >
-              {[...projects, ...projects].map((project, index) => (
+              {[...projects, ...projects, ...projects].map((project, index) => (
                 <motion.div
                   key={`${project.title}-${index}`}
                   className="project-carousel-slide"
@@ -233,8 +278,8 @@ export function Home() {
               ))}
             </div>
           </div>
-          <button type="button" aria-label="Acelerar projetos para a esquerda" className="project-carousel-arrow left-2" onClick={() => moveProjects(-1)}>←</button>
-          <button type="button" aria-label="Acelerar projetos para a direita" className="project-carousel-arrow right-2" onClick={() => moveProjects(1)}>→</button>
+          <button type="button" aria-label="Projeto anterior" className="project-carousel-arrow left-2" onClick={() => moveProjects(-1)}>←</button>
+          <button type="button" aria-label="Próximo projeto" className="project-carousel-arrow right-2" onClick={() => moveProjects(1)}>→</button>
         </div>
       </motion.section>
 
@@ -274,20 +319,12 @@ export function Home() {
           <p>{t('skills.description')}</p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <Accordion type="single" collapsible defaultValue="skill-0" className="skills-accordion">
           {skills.map((skill, index) => (
-            <motion.article
-              key={skill.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.6, delay: index * 0.08 }}
-              whileHover={{ y: -8, scale: 1.01 }}
-              className={`overflow-hidden rounded-[2rem] border bg-[var(--panel)] ${accentMap[skill.title] ?? 'border-sky-300/70'} p-[1px]`}
-            >
-              <div className="h-full rounded-[calc(2rem-1px)] bg-[var(--panel)] p-6">
-                <h3 className="text-2xl font-semibold text-[var(--text)]">{skill.title}</h3>
-                <div className="mt-5 space-y-3 text-sm leading-7 text-[var(--muted)]">
+            <AccordionItem key={skill.title} value={`skill-${index}`} className={`skills-accordion-item ${accentMap[skill.title] ?? 'border-sky-300/70'}`}>
+              <AccordionTrigger>{skill.title}</AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-3 text-sm leading-7 text-[var(--muted)]">
                   {skill.description.map((paragraph, paragraphIndex) => (
                     <p key={paragraph}>{skill.descriptionKeys?.[paragraphIndex] ? t(skill.descriptionKeys[paragraphIndex], paragraph) : paragraph}</p>
                   ))}
@@ -300,10 +337,10 @@ export function Home() {
                     </li>
                   ))}
                 </ul>
-              </div>
-            </motion.article>
+              </AccordionContent>
+            </AccordionItem>
           ))}
-        </div>
+        </Accordion>
       </motion.section>
 
       <motion.section id="contact" className="section-shell pb-28" initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.75 }}>
