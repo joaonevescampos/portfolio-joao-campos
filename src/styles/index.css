@@ -709,7 +709,7 @@ body[data-theme='light'] .project-button.secondary {
 
 .client-hero-note {
   position: absolute;
-  right: max(1rem, calc((100% - 1200px) / 2));
+  right: 16px;
   bottom: 3rem;
   color: #5e625f;
   font-size: 0.63rem;

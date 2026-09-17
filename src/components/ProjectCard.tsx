@@ -40,7 +40,7 @@ export function ProjectCard({ project }: { project: Project }) {
         }
       }}
     >
-      <div className="h-60 shrink-0 bg-[var(--bg-elevated)]">
+      <div className="h-70! md:h-60! shrink-0 bg-[var(--bg-elevated)]">
         {project.image && <img src={project.image} alt={title} className="h-full w-full object-cover" />}
       </div>
       <div className="flex min-h-0 flex-1 flex-col gap-3 p-4">
