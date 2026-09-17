@@ -1,5 +1,6 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { TypeAnimation } from 'react-type-animation'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ProjectCard } from '../components/ProjectCard'
@@ -13,6 +14,7 @@ const featuredProjects = projectGroups[0].projects
 export function Client() {
   const { t } = useTranslation()
   const videoRef = useRef<HTMLVideoElement>(null)
+  const [isHeroTitleComplete, setIsHeroTitleComplete] = useState(false)
   useDocumentTitle('João Campos | Sites sob medida')
 
   useEffect(() => {
@@ -43,23 +45,36 @@ export function Client() {
         <div className="client-hero-video-shade" />
         <div className="client-hero-grid" />
         <div className="client-hero-content">
-          <p className="client-eyebrow">{t("client.eyebrow")}</p>
-          <motion.h1
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={isHeroTitleComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="client-eyebrow"
           >
-            {t("client.title")}
-          </motion.h1>
+            {t("client.eyebrow")}
+          </motion.p>
+          <h1>
+            <TypeAnimation
+              sequence={[t("client.title"), () => setIsHeroTitleComplete(true)]}
+              speed={5}
+              cursor={false}
+              wrapper="span"
+            />
+          </h1>
           <motion.p
             className="client-lead"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            initial={{ opacity: 0, y: 16 }}
+            animate={isHeroTitleComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+            transition={{ delay: 0.1, duration: 0.8 }}
           >
             {t("client.subtitle")}
           </motion.p>
-          <div className="client-actions">
+          <motion.div
+            className="client-actions"
+            initial={{ opacity: 0, y: 16 }}
+            animate={isHeroTitleComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+          >
             <a
               className="client-cta client-cta-dark"
               href={socialLinks.find((link) => link.label === "WhatsApp")?.href}
@@ -71,7 +86,7 @@ export function Client() {
             <a className="client-cta client-cta-outline" href="#projects">
               {t("client.projectsCta")}
             </a>
-          </div>
+          </motion.div>
         </div>
         <div className="client-hero-note">{t("client.note")}</div>
       </section>

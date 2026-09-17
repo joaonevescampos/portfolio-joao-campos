@@ -43,12 +43,12 @@ export function Header({
   return (
     <header className={`sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--header-bg)]/80 backdrop-blur-xl transition-[background-color,border-color] duration-[3000ms] ease-in-out ${clientMode ? 'client-header' : ''}`}>
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-4 md:px-8">
-        <a href="#top" aria-label="Voltar para o início" className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-[var(--text)] transition-colors hover:text-[var(--accent)]">
+        <a href="#top" aria-label="Voltar para o início" className="flex items-center gap-3 text-[12px]! font-bold uppercase tracking-[0.22em] text-[var(--text)] transition-colors hover:text-[var(--accent)]">
           <span className="grid h-9 w-9 place-items-center rounded-full border border-[var(--border)] bg-[var(--panel)] text-sm font-bold text-[var(--text)]">JC</span>
           <span className="hidden sm:inline">João Campos</span>
         </a>
 
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center text-xs gap-6 lg:flex">
           {visibleNavItems.map((item) => (
             <a
               key={item.href}

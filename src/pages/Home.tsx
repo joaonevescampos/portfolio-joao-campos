@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { TypeAnimation } from 'react-type-animation'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { SiReact, SiTypescript, SiNextdotjs, SiNodedotjs, SiTailwindcss, SiPostgresql, SiMongodb, SiPrisma, SiGit, SiFigma, SiOpenjdk } from 'react-icons/si'
@@ -58,6 +59,7 @@ const projects = projectGroups
 
 export function Home() {
   const { t } = useTranslation()
+  const [isHeroTitleComplete, setIsHeroTitleComplete] = useState(false)
   useDocumentTitle('João Campos | Frontend Developer')
   const [visibleProjects, setVisibleProjects] = useState(1)
   const [isProjectsPaused, setIsProjectsPaused] = useState(false)
@@ -150,25 +152,50 @@ export function Home() {
             transition={{ duration: 0.8, delay: 0.1, ease: 'easeOut' }}
             className="hero-copy max-w-3xl"
           >
-            <p className="status-badge mb-5 inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.3em] text-white/80 backdrop-blur-sm">
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={isHeroTitleComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+              className="status-badge mb-5 inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.3em] text-white/80 backdrop-blur-sm"
+            >
               {t('hero.status')}
-            </p>
+            </motion.p>
             <h1 className="text-5xl font-semibold leading-[0.95] tracking-[-0.07em] text-white md:text-7xl">
-              {t('hero.title')}
+              <TypeAnimation
+                sequence={[t('hero.title'), () => setIsHeroTitleComplete(true)]}
+                speed={5}
+                cursor={false}
+                wrapper="span"
+              />
             </h1>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-slate-200 md:text-xl">
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={isHeroTitleComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+              transition={{ duration: 0.7, delay: 0.1, ease: 'easeOut' }}
+              className="mt-5 max-w-xl text-lg leading-8 text-slate-200 md:text-xl"
+            >
               {t('hero.subtitle')}
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={isHeroTitleComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+              transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
+              className="mt-8 flex flex-wrap gap-4"
+            >
               <a href="#projects" className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-slate-950 transition duration-300 hover:-translate-y-0.5 hover:bg-sky-200">
                 {t('hero.ctaPrimary')}
               </a>
               <a href="#contact" className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-white transition duration-300 hover:-translate-y-0.5 hover:border-sky-300 hover:text-sky-200">
                 {t('hero.ctaSecondary')}
               </a>
-            </div>
+            </motion.div>
 
-            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={isHeroTitleComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+              transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
+              className="mt-10 grid gap-4 sm:grid-cols-3"
+            >
               {stats.map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -181,7 +208,7 @@ export function Home() {
                   <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-slate-300">{stat.label}</p>
                 </motion.div>
               ))}
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </motion.section>

@@ -1,5 +1,6 @@
 export type Project = {
   title: string
+  titleKey?: string
   description: string
   descriptionKey?: string
   image?: string

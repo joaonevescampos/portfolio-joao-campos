@@ -11,13 +11,9 @@ import designBackground from '../assets/img/backgrounds/design-bg.jpeg'
 import mandalasImage from '../assets/img/projects/mandalas.png'
 import moviesImage from '../assets/img/projects/mymovies.png'
 import tastyImage from '../assets/img/projects/tasty.png'
-import spotifyImage from '../assets/img/projects/my-spotify.png'
 import hotelImage from '../assets/img/projects/hotel-campos.png'
 import cyberImage from '../assets/img/projects/cyber.png'
-import pontoLocalImage from '../assets/img/projects/ponto-local.png'
-import boardImage from '../assets/img/projects/new-board.png'
-import cucaflowImage from '../assets/img/projects/cucaflow.png'
-import pokegymImage from '../assets/img/projects/pokegym.png'
+import casasImage from '../assets/img/projects/casas-em-milho-verde.png'
 
 export const skills: Skill[] = [
   {
@@ -65,15 +61,12 @@ const frontendProjects: Project[] = [
   { title: 'Mandalas Digitais', image: mandalasImage, descriptionKey: 'projects.cards.mandalas', description: 'Site feito como portfólio de um arquiteto para vendas de mandalas digitais, desenvolvido com HTML, CSS e JavaScript.', liveUrl: 'https://joaonevescampos.github.io/site-mandala/', codeUrl: 'https://github.com/joaonevescampos/site-mandala' },
   { title: 'My Movies', image: moviesImage, descriptionKey: 'projects.cards.movies', description: 'Plataforma de filmes inspirada na Netflix, feita com React, TypeScript e MUI, usando a API do TMDB.', liveUrl: 'https://my-movies-blue.vercel.app/', codeUrl: 'https://github.com/joaonevescampos/my-movies' },
   { title: 'Tasty', image: tastyImage, descriptionKey: 'projects.cards.tasty', description: 'Site responsivo de uma lanchonete, criado com HTML, CSS e JavaScript.', liveUrl: 'https://tasty-murex.vercel.app/', codeUrl: 'https://github.com/joaonevescampos/tasty' },
-  { title: 'My Spotify', image: spotifyImage, descriptionKey: 'projects.cards.spotify', description: 'Site de música inspirado no Spotify, desenvolvido em React e CSS com design idealizado por mim.', liveUrl: 'https://myspotify-eta.vercel.app/', codeUrl: 'https://github.com/joaonevescampos/myspotify' },
   { title: 'Hotel Campos', image: hotelImage, descriptionKey: 'projects.cards.hotel', description: 'Site de reserva de hotéis feito com Bootstrap, Flexbox e Grid layout.', liveUrl: 'https://joaonevescampos.github.io/hotel-campos/', codeUrl: 'https://github.com/joaonevescampos/hotel-campos' },
 ]
 
 const fullstackProjects: Project[] = [
+  { title: 'Casas em Milho Verde', titleKey: 'projects.cards.casasTitle', image: casasImage, descriptionKey: 'projects.cards.casas', description: 'Site criado para um cliente que é corretor de imóveis. O objetivo foi divulgar os imóveis à venda e os aluguéis de temporada do Airbnb. Foi criado todo o sistema de gerenciamento de anúncios para que o cliente pudesse ter 100% do controle dos seus anúncios. Foram usadas tecnologias como React, TypeScript, Tailwind, Motion, Shadcn, Postgres e Supabase como banco de dados e backend.', liveUrl: 'https://www.casasemmilhoverde.com/', codeUrl: 'https://github.com/joaonevescampos/casas-em-milho-verde' },
   { title: 'Cyber Web', image: cyberImage, descriptionKey: 'projects.cards.cyber', description: 'E-commerce de tecnologia com React, TypeScript, Tailwind, Prisma, Node e PostgreSQL, incluindo filtros, login e carrinho.', liveUrl: 'https://cyber-web-frontend-public.vercel.app/', codeUrl: 'https://github.com/joaonevescampos/cyber-web-frontend-public' },
-  { title: 'Ponto Local', image: pontoLocalImage, descriptionKey: 'projects.cards.local', description: 'MVP de e-commerce para negociação de produtos locais, criado com React, TypeScript, MUI, Postgres e Java com SpringBoot.', codeUrl: 'https://github.com/pontolocal/frontend', secondaryCodeUrl: 'https://github.com/pontolocal/backend' },
-  { title: 'New Board', image: boardImage, descriptionKey: 'projects.cards.board', description: 'Software de gerenciamento de tarefas similar ao Trello, desenvolvido em equipe com React, CSS, Node e PostgreSQL.', liveUrl: 'https://new-board-project.vercel.app/', codeUrl: 'https://github.com/My-Tech-Mind/new-board' },
-  { title: 'Cucaflow', image: cucaflowImage, descriptionKey: 'projects.cards.cucaflow', description: 'Software criado para melhorar a organização de artistas, desenvolvido com Node, TypeScript, Next, Tailwind, Nest, Prisma e PostgreSQL.', liveUrl: 'https://cucaflow.netlify.app/', codeUrl: 'https://github.com/patrickcardoso-dev/cucaflow-app' },
 ]
 
 const backendProjects: Project[] = [
@@ -82,9 +75,7 @@ const backendProjects: Project[] = [
 ]
 
 export const projectGroups = [
-  { id: 'best', title: 'Os melhores', projects: [pokegymImage, moviesImage, tastyImage, cyberImage].map((image, index) => ({
-    title: ['Pokegym', 'My Movies', 'Tasty', 'Cyber Web'][index], image, descriptionKey: ['projects.cards.pokegym', 'projects.cards.movies', 'projects.cards.tasty', 'projects.cards.cyber'][index], description: ['App de produtividade e aventura com React Vite, TypeScript, Tailwind e Shadcn.', frontendProjects[1].description, frontendProjects[2].description, fullstackProjects[0].description][index], liveUrl: [ 'https://pokegym.vercel.app/', frontendProjects[1].liveUrl, frontendProjects[2].liveUrl, fullstackProjects[0].liveUrl][index], codeUrl: ['https://github.com/joaonevescampos/pokegym', frontendProjects[1].codeUrl, frontendProjects[2].codeUrl, fullstackProjects[0].codeUrl][index],
-  })) },
+  { id: 'best', title: 'Os melhores', projects: [fullstackProjects[0], frontendProjects[1], frontendProjects[2], fullstackProjects[1]] },
   { id: 'frontend', title: 'Projetos frontend', projects: frontendProjects },
   { id: 'fullstack', title: 'Projetos fullstack', projects: fullstackProjects },
   { id: 'backend', title: 'Projetos backend', projects: backendProjects },

@@ -26,7 +26,7 @@ const resources = {
       about: {
         kicker: 'Sobre',
         title: 'Design com rigor técnico e visão de produto.',
-        description: 'Sou um profissional em transição de engenharia para desenvolvimento web, com foco em interfaces modernas, experiência do usuário e execução com alto nível de qualidade.',
+        description: 'Sou um profissional com foco em interfaces modernas, experiência do usuário e execução com alto nível de qualidade.',
         paragraph1:
           'Sou João Campos, um engenheiro químico que encontrou na tecnologia uma nova e profunda paixão. A partir da experiência com desenvolvimento web, me especializei em frontend e também consolidei conhecimentos em backend para entregar soluções mais completas e bem estruturadas.',
         paragraph2:
@@ -42,16 +42,14 @@ const resources = {
         description:
           'Destaque para projetos em frontend, fullstack e backend, todos pensados para entregar experiência real, clareza e execução de alto nível.',
         cards: {
+          casasTitle: 'Casas em Milho Verde',
+          casas: 'Site criado para um cliente que é corretor de imóveis. O objetivo foi divulgar os imóveis à venda e os aluguéis de temporada do Airbnb. Foi criado todo o sistema de gerenciamento de anúncios para que o cliente pudesse ter 100% do controle dos seus anúncios. Foram usadas tecnologias como React, TypeScript, Tailwind, Motion, Shadcn, Postgres e Supabase como banco de dados e backend.',
           pokegym: 'App de produtividade e aventura com React Vite, TypeScript, Tailwind e Shadcn.',
           mandalas: 'Site feito como portfólio de um arquiteto para vendas de mandalas digitais, desenvolvido com HTML, CSS e JavaScript.',
           movies: 'Plataforma de filmes inspirada na Netflix, feita com React, TypeScript e MUI, usando a API do TMDB.',
           tasty: 'Site responsivo de uma lanchonete, criado com HTML, CSS e JavaScript.',
-          spotify: 'Site de música inspirado no Spotify, desenvolvido em React e CSS com design idealizado por mim.',
           hotel: 'Site de reserva de hotéis feito com Bootstrap, Flexbox e Grid layout.',
           cyber: 'E-commerce de tecnologia com React, TypeScript, Tailwind, Prisma, Node e PostgreSQL, incluindo filtros, login e carrinho.',
-          local: 'MVP de e-commerce para negociação de produtos locais, criado com React, TypeScript, MUI, Postgres e Java com SpringBoot.',
-          board: 'Software de gerenciamento de tarefas similar ao Trello, desenvolvido em equipe com React, CSS, Node e PostgreSQL.',
-          cucaflow: 'Software criado para melhorar a organização de artistas, desenvolvido com Node, TypeScript, Next, Tailwind, Nest, Prisma e PostgreSQL.',
           sales: 'API para simular o backend de um software de loja de vendas, desenvolvida com Node.js e Postgres.',
           bank: 'API RESTful de um banco digital com contas, depósitos, saques, transferências, saldo e extrato.',
         },
@@ -114,6 +112,14 @@ const resources = {
         aboutTitle: 'Tecnologia com olhar humano.',
         aboutCta: 'Falar com João no WhatsApp',
       },
+      projectDetails: {
+        details: 'Ver detalhes',
+        close: 'Fechar detalhes',
+        live: 'Ver projeto',
+        code: 'Código',
+        frontendCode: 'Código frontend',
+        backendCode: 'Código backend',
+      },
     },
   },
   en: {
@@ -140,7 +146,7 @@ const resources = {
       about: {
         kicker: 'About',
         title: 'Design backed by technical rigor and product thinking.',
-        description: 'I am a professional in transition from engineering to web development, focused on modern interfaces, user experience and high-quality execution.',
+        description: 'I am a professional transition from engineering to web development, focused on modern interfaces, user experience and high-quality execution.',
         paragraph1:
           'I am João Campos, a chemical engineer who found a new and deep passion in technology. Through my web development experience, I specialized in frontend and also built backend knowledge to deliver more complete and well-structured solutions.',
         paragraph2:
@@ -156,7 +162,7 @@ const resources = {
         description:
           'Highlights in frontend, fullstack and backend projects, all designed to deliver real experience, clarity and high-level execution.',
         cards: {
-          pokegym: 'Productivity and adventure app built with React Vite, TypeScript, Tailwind and Shadcn.', mandalas: 'Portfolio website for an architect selling digital mandalas, built with HTML, CSS and JavaScript.', movies: 'Netflix-inspired movie platform built with React, TypeScript and MUI using the TMDB API.', tasty: 'Responsive restaurant website built with HTML, CSS and JavaScript.', spotify: 'Spotify-inspired music website built with React and CSS, with a design created by me.', hotel: 'Hotel booking website built with Bootstrap, Flexbox and Grid layout.', cyber: 'Technology e-commerce built with React, TypeScript, Tailwind, Prisma, Node and PostgreSQL, with filters, login and cart.', local: 'E-commerce MVP for local product negotiation, built with React, TypeScript, MUI, Postgres and Java with SpringBoot.', board: 'Trello-like task management software built by a team with React, CSS, Node and PostgreSQL.', cucaflow: 'Artist organization software built with Node, TypeScript, Next, Tailwind, Nest, Prisma and PostgreSQL.', sales: 'API simulating the backend of a sales store, built with Node.js and Postgres.', bank: 'RESTful digital banking API with accounts, deposits, withdrawals, transfers, balance and statement.',
+          casasTitle: 'Houses in Milho Verde', casas: 'Website created for a real estate agent to showcase properties for sale and Airbnb vacation rentals. It includes a complete listing management system, giving the client full control over their ads. Built with React, TypeScript, Tailwind, Motion, Shadcn, Postgres and Supabase for the database and backend.', pokegym: 'Productivity and adventure app built with React Vite, TypeScript, Tailwind and Shadcn.', mandalas: 'Portfolio website for an architect selling digital mandalas, built with HTML, CSS and JavaScript.', movies: 'Netflix-inspired movie platform built with React, TypeScript and MUI using the TMDB API.', tasty: 'Responsive restaurant website built with HTML, CSS and JavaScript.', hotel: 'Hotel booking website built with Bootstrap, Flexbox and Grid layout.', cyber: 'Technology e-commerce built with React, TypeScript, Tailwind, Prisma, Node and PostgreSQL, with filters, login and cart.', sales: 'API simulating the backend of a sales store, built with Node.js and Postgres.', bank: 'RESTful digital banking API with accounts, deposits, withdrawals, transfers, balance and statement.',
         },
       },
       experience: {
@@ -200,6 +206,14 @@ const resources = {
         aboutTitle: 'Technology with a human point of view.',
         aboutCta: 'Talk to João on WhatsApp',
       },
+      projectDetails: {
+        details: 'View details',
+        close: 'Close details',
+        live: 'View project',
+        code: 'Code',
+        frontendCode: 'Frontend code',
+        backendCode: 'Backend code',
+      },
     },
   },
   es: {
@@ -226,7 +240,7 @@ const resources = {
       about: {
         kicker: 'Sobre',
         title: 'Diseño con rigor técnico y visión de producto.',
-        description: 'Soy un profesional en transición de ingeniería al desarrollo web, con foco en interfaces modernas, experiencia de usuario y ejecución de alto nivel.',
+        description: 'Soy un profesional con foco en interfaces modernas, experiencia de usuario y ejecución de alto nivel.',
         paragraph1:
           'Soy João Campos, ingeniero químico que encontró una nueva y profunda pasión en la tecnología. A partir de la experiencia en desarrollo web, me especialicé en frontend y también consolidé conocimientos de backend para entregar soluciones más completas y bien estructuradas.',
         paragraph2:
@@ -242,7 +256,7 @@ const resources = {
         description:
           'Proyectos destacados en frontend, fullstack y backend, pensados para ofrecer experiencia real, claridad y ejecución de alto nivel.',
         cards: {
-          pokegym: 'Aplicación de productividad y aventura con React Vite, TypeScript, Tailwind y Shadcn.', mandalas: 'Portafolio para un arquitecto que vende mandalas digitales, desarrollado con HTML, CSS y JavaScript.', movies: 'Plataforma de películas inspirada en Netflix, hecha con React, TypeScript y MUI usando la API de TMDB.', tasty: 'Sitio responsivo para una cafetería, creado con HTML, CSS y JavaScript.', spotify: 'Sitio musical inspirado en Spotify, desarrollado con React y CSS y diseñado por mí.', hotel: 'Sitio de reservas de hoteles hecho con Bootstrap, Flexbox y Grid layout.', cyber: 'E-commerce tecnológico con React, TypeScript, Tailwind, Prisma, Node y PostgreSQL, con filtros, login y carrito.', local: 'MVP de e-commerce para negociar productos locales, creado con React, TypeScript, MUI, Postgres y Java con SpringBoot.', board: 'Software de gestión de tareas similar a Trello, desarrollado en equipo con React, CSS, Node y PostgreSQL.', cucaflow: 'Software para organizar artistas, desarrollado con Node, TypeScript, Next, Tailwind, Nest, Prisma y PostgreSQL.', sales: 'API para simular el backend de una tienda de ventas, desarrollada con Node.js y Postgres.', bank: 'API RESTful de un banco digital con cuentas, depósitos, retiros, transferencias, saldo y extracto.',
+          casasTitle: 'Casas en Milho Verde', casas: 'Sitio creado para un agente inmobiliario para divulgar inmuebles en venta y alquileres de temporada en Airbnb. Incluye un sistema completo de gestión de anuncios para que el cliente tenga el control total de sus publicaciones. Desarrollado con React, TypeScript, Tailwind, Motion, Shadcn, Postgres y Supabase como base de datos y backend.', pokegym: 'Aplicación de productividad y aventura con React Vite, TypeScript, Tailwind y Shadcn.', mandalas: 'Portafolio para un arquitecto que vende mandalas digitales, desarrollado con HTML, CSS y JavaScript.', movies: 'Plataforma de películas inspirada en Netflix, hecha con React, TypeScript y MUI usando la API de TMDB.', tasty: 'Sitio responsivo para una cafetería, creado con HTML, CSS y JavaScript.', hotel: 'Sitio de reservas de hoteles hecho con Bootstrap, Flexbox y Grid layout.', cyber: 'E-commerce tecnológico con React, TypeScript, Tailwind, Prisma, Node y PostgreSQL, con filtros, login y carrito.', sales: 'API para simular el backend de una tienda de ventas, desarrollada con Node.js y Postgres.', bank: 'API RESTful de un banco digital con cuentas, depósitos, retiros, transferencias, saldo y extracto.',
         },
       },
       experience: {
@@ -285,6 +299,14 @@ const resources = {
         aboutEyebrow: 'Quién construirá contigo',
         aboutTitle: 'Tecnología con una mirada humana.',
         aboutCta: 'Hablar con João por WhatsApp',
+      },
+      projectDetails: {
+        details: 'Ver detalles',
+        close: 'Cerrar detalles',
+        live: 'Ver proyecto',
+        code: 'Código',
+        frontendCode: 'Código frontend',
+        backendCode: 'Código backend',
       },
     },
   },

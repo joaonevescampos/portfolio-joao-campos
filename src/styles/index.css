@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: 'Manrope', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
 }
 
 :root {
@@ -60,8 +61,17 @@ body {
   min-width: 320px;
   background: var(--bg);
   color: var(--text);
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   transition: background-color 3s ease, color 3s ease, border-color 3s ease, box-shadow 3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .social-links {
@@ -202,6 +212,18 @@ body[data-theme='light'] .hero-copy .rounded-2xl span {
   box-shadow: 0 22px 55px var(--shadow);
 }
 
+.project-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.project-card p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 body[data-theme='light'] .project-card {
   background: #ffffff;
   box-shadow: none;
@@ -282,6 +304,97 @@ body[data-theme='light'] .project-card {
 
 body[data-theme='light'] .project-button.secondary {
   background: rgba(15, 23, 42, 0.02);
+}
+
+.project-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: rgba(2, 6, 23, 0.78);
+  backdrop-filter: blur(12px);
+}
+
+.project-modal-content {
+  position: relative;
+  display: grid;
+  width: min(100%, 58rem);
+  max-height: min(90vh, 48rem);
+  overflow: auto;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: var(--project-card-bg);
+  color: var(--project-card-text);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.45);
+}
+
+.project-modal-image {
+  width: 100%;
+  height: 100%;
+  min-height: 20rem;
+  object-fit: cover;
+}
+
+.project-modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.project-modal-eyebrow {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.project-modal-body h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.1;
+}
+
+.project-modal-body>p:not(.project-modal-eyebrow) {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.project-modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.project-modal-close {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  z-index: 1;
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  background: rgba(2, 6, 23, 0.55);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-modal-close:hover {
+  background: var(--accent-strong);
+  transform: scale(1.05);
 }
 
 @keyframes marquee {
@@ -661,11 +774,11 @@ body[data-theme='light'] .project-button.secondary {
 }
 
 .client-project-grid .project-card {
-  height: 32rem;
+  height: 27rem;
 }
 
 .client-project-grid .project-card>div:first-child {
-  height: 13rem;
+  height: 11rem;
 }
 
 .client-about {
@@ -683,6 +796,21 @@ body[data-theme='light'] .project-button.secondary {
 
 .client-about-copy p {
   margin: 0 0 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .project-modal-content {
+    grid-template-columns: 1fr;
+  }
+
+  .project-modal-image {
+    height: 14rem;
+    min-height: 0;
+  }
+
+  .project-modal-body {
+    padding: 2rem 1.5rem 1.5rem;
+  }
 }
 
 .client-about-copy .client-cta {
