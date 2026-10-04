@@ -75,8 +75,9 @@ const backendProjects: Project[] = [
 ]
 
 export const projectGroups = [
-  { id: 'best', title: 'Os melhores', projects: [fullstackProjects[0], frontendProjects[1], frontendProjects[2], fullstackProjects[1]] },
+  { id: 'best', title: 'Os melhores', projects: [fullstackProjects[0], frontendProjects[1], frontendProjects[2], frontendProjects[0]] },
   { id: 'frontend', title: 'Projetos frontend', projects: frontendProjects },
   { id: 'fullstack', title: 'Projetos fullstack', projects: fullstackProjects },
   { id: 'backend', title: 'Projetos backend', projects: backendProjects },
 ] satisfies { id: string; title: string; projects: Project[] }[]
+

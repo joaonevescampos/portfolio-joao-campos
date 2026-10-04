@@ -8,8 +8,21 @@ import { projectGroups } from '../services/portfolioData'
 import { socialLinks } from '../utils/links'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import clientBackground from '../assets/video/background-client.mp4'
+import basic from "../assets/img/plans/basic.png"
+import pro from "../assets/img/plans/pro.png"
+import premium from "../assets/img/plans/premium.png"
+import premiumPlus from "../assets/img/plans/premium-plus.png"
+import PlanCard from '../components/PlanCard'
+
 
 const featuredProjects = projectGroups[0].projects
+
+const plans = [
+  {id: "basic", image: basic},
+  {id: "pro", image: pro},
+  {id: "premium", image: premium},
+  {id: "premiumPlus", image: premiumPlus},
+]
 
 export function Client() {
   const { t } = useTranslation()
@@ -107,6 +120,28 @@ export function Client() {
               transition={{ delay: index * 0.08 }}
             >
               <ProjectCard project={project} />
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      <section id="plans" className="client-section">
+        <div className="client-section-heading">
+          <p className="client-eyebrow">{t("client.plansEyebrow")}</p>
+          <h2>{t("client.plansTitle")}</h2>
+          <p>{t("client.plansDescription")}</p>
+        </div>
+        <div className="client-project-grid">
+          {plans.map((plan, index) => (
+            <motion.div
+              key={plan.id}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{ delay: index * 0.08 }}
+            >
+              <PlanCard plan={plan}/>
+              
             </motion.div>
           ))}
         </div>

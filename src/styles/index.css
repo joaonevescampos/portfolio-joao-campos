@@ -394,7 +394,7 @@ body[data-theme='light'] .project-button.secondary {
   place-items: center;
   border: 1px solid var(--border);
   border-radius: 9999px;
-  background: rgba(2, 6, 23, 0.55);
+  background: rgba(245, 37, 37, 0.918);
   color: #fff;
   font-size: 0.75rem;
   font-weight: 700;
@@ -533,6 +533,11 @@ body[data-theme='light'] .project-button.secondary {
   color: #111214;
 }
 
+.magnetic-button-orange {
+  background: #fa4809;
+  color: #ffffff;
+}
+
 .magnetic-button-arrow {
   font-size: 1.35rem;
   font-weight: 400;
@@ -625,7 +630,7 @@ body[data-theme='light'] .project-button.secondary {
 }
 
 .client-hero-video-shade {
-  background: linear-gradient(105deg, rgba(16, 33, 53, 0.92), rgba(19, 34, 53, 0.42) 56%, rgba(5, 10, 16, 0.74));
+  background: linear-gradient(105deg, #fa48097e, rgba(19, 34, 53, 0.42) 56%, rgba(5, 10, 16, 0.74));
 }
 
 .client-hero-grid {
@@ -756,7 +761,7 @@ body[data-theme='light'] .project-button.secondary {
 }
 
 .client-page #about {
-  background: linear-gradient(135deg, #050505 0%, #1f2f41 100%);
+  background: linear-gradient(135deg, #050505 0%, #fa48097e 100%);
 }
 
 .client-about-flex {
