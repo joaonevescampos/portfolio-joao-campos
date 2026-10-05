@@ -25,7 +25,7 @@ const plans = [
 ];
 
 export function Client() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isHeroTitleComplete, setIsHeroTitleComplete] = useState(false);
   useDocumentTitle("João Campos | Sites sob medida");
@@ -75,6 +75,7 @@ export function Client() {
           </motion.p>
           <h1>
             <TypeAnimation
+              key={i18n.language}
               sequence={[t("client.title"), () => setIsHeroTitleComplete(true)]}
               speed={5}
               cursor={false}
