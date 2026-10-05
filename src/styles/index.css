@@ -630,7 +630,7 @@ body[data-theme='light'] .project-button.secondary {
 }
 
 .client-hero-video-shade {
-  background: linear-gradient(105deg, #fa48097e, rgba(19, 34, 53, 0.42) 56%, rgba(5, 10, 16, 0.74));
+  background: linear-gradient(105deg, #fa490944, rgba(19, 34, 53, 0.42) 56%, rgba(5, 10, 16, 0.74));
 }
 
 .client-hero-grid {
@@ -753,15 +753,15 @@ body[data-theme='light'] .project-button.secondary {
   letter-spacing: -0.06em;
 }
 
-.client-page #about {
+.client-page #about, .client-page #about2 {
   display: flex;
   justify-content: center;
   margin: auto;
   width: 100% !important;
 }
 
-.client-page #about {
-  background: linear-gradient(135deg, #050505 0%, #fa48097e 100%);
+.client-page #about, .client-page #about2 {
+  background: linear-gradient(135deg, #050505 0%, #fa49092f 100%);
 }
 
 .client-about-flex {
@@ -831,8 +831,8 @@ body[data-theme='light'] .project-button.secondary {
   margin-top: 1rem;
 }
 
-body[data-theme='light'] .client-page #about {
-  background: linear-gradient(135deg, #EEF4FB 0%, #c1d1da 100%);
+body[data-theme='light'] .client-page #about, body[data-theme='light'] .client-page #about2 {
+  background: linear-gradient(135deg, #fa490918 0%, #c1d1da 100%);
 }
 
 @media (max-width: 767px) {
@@ -929,8 +929,8 @@ body[data-theme='light'] .client-page #about {
 }
 
 body[data-theme='light'] .client-hero-video-shade {
-  background: linear-gradient(105deg, rgba(21, 30, 58, 0.5), rgba(105, 103, 103, 0.28) 58%, rgba(55, 53, 116, 0.52));
-  box-shadow: inset 0 0 150px rgba(72, 71, 126, 0.92);
+  background: linear-gradient(105deg, #fa49092f, rgba(43, 42, 42, 0.28) 58%, #2e0d012f);
+  box-shadow: inset 0 0 150px #fa49092f;
 }
 
 body[data-theme='light'] .client-hero-content {

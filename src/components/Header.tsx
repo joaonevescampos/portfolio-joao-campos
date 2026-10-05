@@ -7,7 +7,12 @@ const navItems = [
   { labelKey: 'nav.projects', href: '#projects' },
   { labelKey: 'nav.experience', href: '#experience' },
   { labelKey: 'nav.skills', href: '#skills' },
+  { labelKey: 'nav.plans', href: '#plans' },
   { labelKey: 'nav.contact', href: '#contact' },
+  { labelKey: 'nav.contact', href: '#about2' },
+
+
+
 ]
 
 export function Header({
@@ -26,7 +31,7 @@ export function Header({
   const { t } = useTranslation()
   const [activeSection, setActiveSection] = useState('about')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const visibleNavItems = clientMode ? navItems.filter((item) => item.href === '#projects' || item.href === '#about') : navItems
+  const visibleNavItems = clientMode ? navItems.filter((item) => item.href === '#projects' || item.href === '#about' || item.href === '#plans' || item.href === '#about2' ) : navItems
 
   useEffect(() => {
     const updateActiveSection = () => {
