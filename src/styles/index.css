@@ -607,7 +607,8 @@ body[data-theme='light'] .project-button.secondary {
 .client-hero {
   position: relative;
   display: flex;
-  min-height: min(760px, calc(100vh - 5rem));
+  height: 100vh;
+  /* min-height: min(760px, calc(100vh - 5rem)); */
   align-items: center;
   overflow: hidden;
   padding: 7rem max(1rem, calc((100% - 1200px) / 2)) 6rem;
