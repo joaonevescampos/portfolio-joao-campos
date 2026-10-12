@@ -11,6 +11,7 @@ const resources = {
         skills: "Habilidades",
         plans: "Planos",
         contact: "Contato",
+        process: "Etapas",
       },
       hero: {
         status: "Disponível para oportunidades",
@@ -133,6 +134,36 @@ const resources = {
         projectsDescription:
           "Cada projeto nasce de uma necessidade real e ganha uma experiência pensada para pessoas reais.",
 
+        process: {
+          title: "Do Escopo ao Lançamento",
+          subtitle:
+            "Como transformamos sua ideia em um produto digital de alta performance.",
+          step1: {
+            title: "Criação do Escopo",
+            description:
+              "Definição clara dos objetivos, funcionalidades e requisitos do projeto.",
+          },
+          step2: {
+            title: "Orçamento + 50%",
+            description:
+              "Aprovação do valor total e início do projeto com o pagamento inicial de 50%.",
+          },
+          step3: {
+            title: "Desenvolvimento",
+            description:
+              "Codificação, design de interfaces e implementação das funcionalidades.",
+          },
+          step4: {
+            title: "Revisão e Aprovação",
+            description:
+              "Testes finais, ajustes refinados e validação do cliente antes do lançamento.",
+          },
+          step5: {
+            title: "Publicação + 50%",
+            description:
+              "Deploy em produção, entrega final e pagamento dos 50% restantes.",
+          },
+        },
         plans: {
           eyebrow: "Planos e preços",
           heading: "Escolha o plano ideal para o seu negócio",
@@ -258,6 +289,7 @@ const resources = {
         experience: "Experience",
         skills: "Skills",
         contact: "Contact",
+        process: "Steps",
       },
       hero: {
         status: "Available for opportunities",
@@ -379,6 +411,36 @@ const resources = {
         projectsTitle: "Your next website can start here.",
         projectsDescription:
           "Every project begins with a real need and becomes an experience designed for real people.",
+        process: {
+          title: "From Scope to Launch",
+          subtitle:
+            "How we turn your idea into a high-performance digital product.",
+          step1: {
+            title: "Project Scope",
+            description:
+              "Clear definition of objectives, features, and project requirements.",
+          },
+          step2: {
+            title: "Budget + 50%",
+            description:
+              "Approval of the total value and project kickoff with a 50% initial payment.",
+          },
+          step3: {
+            title: "Development",
+            description:
+              "Coding, UI design, and implementation of all planned features.",
+          },
+          step4: {
+            title: "Review & Approval",
+            description:
+              "Final testing, refined adjustments, and client validation before launch.",
+          },
+          step5: {
+            title: "Launch + 50%",
+            description:
+              "Production deployment, final delivery, and payment of the remaining 50%.",
+          },
+        },
 
         plans: {
           eyebrow: "Plans and pricing",
@@ -506,6 +568,7 @@ const resources = {
         skills: "Habilidades",
         plans: "Planes",
         contact: "Contacto",
+        process: "Etapas",
       },
       hero: {
         status: "Disponible para oportunidades",
@@ -627,6 +690,37 @@ const resources = {
         projectsTitle: "Tu próximo sitio puede empezar aquí.",
         projectsDescription:
           "Cada proyecto nace de una necesidad real y se convierte en una experiencia pensada para personas reales.",
+
+        process: {
+          title: "Del Alcance al Lanzamiento",
+          subtitle:
+            "Cómo convertimos tu idea en un producto digital de alto rendimiento.",
+          step1: {
+            title: "Creación del Alcance",
+            description:
+              "Definición clara de objetivos, funcionalidades y requisitos del proyecto.",
+          },
+          step2: {
+            title: "Presupuesto + 50%",
+            description:
+              "Aprobación del valor total e inicio del proyecto con el pago inicial del 50%.",
+          },
+          step3: {
+            title: "Desarrollo",
+            description:
+              "Codificación, diseño de interfaces e implementación de funcionalidades.",
+          },
+          step4: {
+            title: "Revisión y Aprobación",
+            description:
+              "Pruebas finales, ajustes refinados y validación del cliente antes del lanzamiento.",
+          },
+          step5: {
+            title: "Publicación + 50%",
+            description:
+              "Despliegue en producción, entrega final y pago del 50% restante.",
+          },
+        },
 
         plans: {
           eyebrow: "Planes y precios",

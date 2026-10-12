@@ -15,6 +15,7 @@ import premiumPlus from "../assets/img/plans/premium-plus.png";
 // import PlanCard from "../components/PlanCard";
 import profilePhoto from "../assets/img/perfil-portfolio.png";
 import PricingPlans from "../components/PricingPlans";
+import { ProcessTimeline } from "../components/ProcessTimeline";
 
 const featuredProjects = projectGroups[0].projects;
 
@@ -257,6 +258,8 @@ export function Client() {
           ))}
         </div>
       </section>
+
+      <ProcessTimeline/>
 
       <section id="plans" className="client-section">
         <div className="client-section-heading">

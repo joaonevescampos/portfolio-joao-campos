@@ -25,6 +25,64 @@
   --button-primary-text: #020617;
   --button-secondary-border: rgba(255,255,255,0.25);
   color-scheme: dark;
+
+  --color-bg-dark: #050505;
+  --color-bg-card: #111111;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a1a1aa;
+  --color-accent: #f97316; /* Laranja vibrante */
+  --color-accent-glow: rgba(249, 115, 22, 0.3);
+  --color-line: #27272a;
+  
+  /* Espaçamentos e Bordas */
+  --radius-card: 1rem;
+  --radius-icon: 50%;
+
+  --pp-section-bg: #101010;
+  --pp-section-text: #ffffff;
+
+  /* Card */
+  --pp-card-bg: #1c1c1c;
+  --pp-card-border: rgba(255, 255, 255, 0.1);
+  --pp-card-border-premium: rgba(255, 255, 255, 0.15);
+  --pp-card-border-premium-plus: rgba(255, 87, 34, 0.6);
+  --pp-card-shadow: 0 18px 55px rgba(0, 0, 0, 0.25);
+  --pp-card-gradient-from: #2b1b17;
+  --pp-card-gradient-to: #191919;
+  --pp-card-hover-border: rgba(255, 87, 34, 0.7);
+
+  /* Overlay gradient */
+  --pp-overlay-gradient: linear-gradient(
+    135deg,
+    rgba(255, 87, 34, 0.07),
+    transparent 38%,
+    transparent
+  );
+
+  /* Text colors */
+  --pp-text-primary: #ffffff;
+  --pp-text-muted: rgba(255, 255, 255, 0.7);
+  --pp-text-muted-strong: rgba(255, 255, 255, 0.85);
+  --pp-text-muted-soft: rgba(255, 255, 255, 0.65);
+  --pp-text-faint: rgba(255, 255, 255, 0.4);
+  --pp-text-guarantee: rgba(255, 255, 255, 0.75);
+
+  /* Borders */
+  --pp-border-soft: rgba(255, 255, 255, 0.1);
+
+  /* Accent (kept orange in both themes) */
+  --pp-accent: #ff5722;
+  --pp-accent-light: #ff7043;
+  --pp-accent-star: #ffc857;
+  --pp-accent-contrast: #000000;
+
+  /* Popular badge */
+  --pp-badge-bg: rgba(255, 87, 34, 0.1);
+  --pp-badge-border: rgba(255, 87, 34, 0.4);
+  --pp-badge-text: #ff7043;
+
+  /* Estimated box */
+  --pp-estimate-bg: rgba(255, 87, 34, 0.07);
 }
 
 body[data-theme='light'] {
@@ -46,6 +104,55 @@ body[data-theme='light'] {
   --button-primary-text: #f8fafc;
   --button-secondary-border: rgba(15, 23, 42, 0.18);
   color-scheme: light;
+
+  --pp-section-bg: #eef4fb;
+  --pp-section-text: #101010;
+
+  --pp-card-bg: #ffffff;
+  --pp-card-border: rgba(0, 0, 0, 0.1);
+  --pp-card-border-premium: rgba(0, 0, 0, 0.15);
+  --pp-card-border-premium-plus: rgba(255, 87, 34, 0.6);
+  --pp-card-shadow: 0 18px 55px rgba(0, 0, 0, 0.08);
+  --pp-card-gradient-from: #fff2ec;
+  --pp-card-gradient-to: #ffffff;
+  --pp-card-hover-border: rgba(255, 87, 34, 0.8);
+
+  --pp-overlay-gradient: linear-gradient(
+    135deg,
+    rgba(255, 87, 34, 0.08),
+    transparent 38%,
+    transparent
+  );
+
+  --pp-text-primary: #101010;
+  --pp-text-muted: rgba(16, 16, 16, 0.7);
+  --pp-text-muted-strong: rgba(16, 16, 16, 0.85);
+  --pp-text-muted-soft: rgba(16, 16, 16, 0.65);
+  --pp-text-faint: rgba(16, 16, 16, 0.45);
+  --pp-text-guarantee: rgba(16, 16, 16, 0.75);
+
+  --pp-border-soft: rgba(0, 0, 0, 0.1);
+
+  /* Accent stays orange in light mode too */
+  --pp-accent: #ff5722;
+  --pp-accent-light: #ff7043;
+  --pp-accent-star: #ffb300;
+  --pp-accent-contrast: #ffffff;
+
+  --pp-badge-bg: rgba(255, 87, 34, 0.12);
+  --pp-badge-border: rgba(255, 87, 34, 0.4);
+  --pp-badge-text: #e64a19;
+
+  --pp-estimate-bg: rgba(255, 87, 34, 0.08);
+
+  --color-bg-dark: #eef4fb;
+  --color-bg-card: #ffffff;
+  --color-text-primary: #09090b;
+  --color-text-secondary: #52525b;
+  --color-accent: #ea580c; /* Laranja mais escuro para contraste no claro */
+  --color-accent-glow: rgba(234, 88, 12, 0.15);
+  --color-line: #e4e4e7;
+
 }
 
 * { box-sizing: border-box; }
@@ -511,7 +618,7 @@ body[data-theme='light'] .project-button.secondary {
   padding: 1.2rem 1.5rem 1.2rem 1.8rem;
   border: 1px solid transparent;
   border-radius: 0.35rem;
-  font-size: clamp(1rem, 1.15vw, 1.1rem);
+  font-size: clamp(.8rem, 1.15vw, 1rem);
   font-weight: 700;
   letter-spacing: 0.03em;
   transition: box-shadow 0.35s ease, background-color 0.35s ease, border-color 0.35s ease;

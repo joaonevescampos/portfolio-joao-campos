@@ -13,6 +13,7 @@ const navItemsCompany = [
 const navItemsClient = [
   { labelKey: "nav.about", href: "#about" },
   { labelKey: "nav.projects", href: "#projects" },
+  { labelKey: "nav.process", href: "#process" },
   { labelKey: "nav.plans", href: "#plans" },
   { labelKey: "nav.contact", href: "#about2" },
 ];
