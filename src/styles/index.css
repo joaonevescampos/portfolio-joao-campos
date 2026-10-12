@@ -536,6 +536,7 @@ body[data-theme='light'] .project-button.secondary {
 .magnetic-button-orange {
   background: #fa4809;
   color: #ffffff;
+  max-width: 350px;
 }
 
 .magnetic-button-arrow {

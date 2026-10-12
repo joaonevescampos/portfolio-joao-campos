@@ -12,8 +12,9 @@ import basic from "../assets/img/plans/basic.png";
 import pro from "../assets/img/plans/pro.png";
 import premium from "../assets/img/plans/premium.png";
 import premiumPlus from "../assets/img/plans/premium-plus.png";
-import PlanCard from "../components/PlanCard";
+// import PlanCard from "../components/PlanCard";
 import profilePhoto from "../assets/img/perfil-portfolio.png";
+import PricingPlans from "../components/PricingPlans";
 
 const featuredProjects = projectGroups[0].projects;
 
@@ -263,7 +264,8 @@ export function Client() {
           <h2>{t("client.plansTitle")}</h2>
           <p>{t("client.plansDescription")}</p>
         </div>
-        <div className="client-project-grid">
+        <PricingPlans />
+        {/* <div className="client-project-grid">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.id}
@@ -275,7 +277,7 @@ export function Client() {
               <PlanCard plan={plan} />
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </section>
 
       <section id="about2" className="client-about">

@@ -13,6 +13,7 @@
     "@vitejs/plugin-react": "latest",
     "framer-motion": "^13.3.0",
     "i18next": "^26.4.2",
+    "lucide-react": "^1.55.0",
     "react": "latest",
     "react-dom": "latest",
     "react-i18next": "^17.0.14",

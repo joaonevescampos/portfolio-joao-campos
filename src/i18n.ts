@@ -36,7 +36,8 @@ const resources = {
           "Minha paixão por design bem pensado e interfaces responsivas me impulsiona a criar projetos que unem usabilidade, estética, performance e produtividade. Trabalho com as tecnologias mais modernas do mercado — React, TypeScript, Tailwind, Node.js, Postgres e Supabase — garantindo soluções robustas, escaláveis e sob medida para as necessidades do seu negócio.",
         paragraph3:
           "Além do código, tenho um olhar apurado para design visual e uma obsessão por excelência. Meu compromisso é criar experiências digitais que conectam funcionalidade, clareza e resultados reais. Se você busca um parceiro que entregue qualidade, inovação e um trabalho que realmente faz a diferença, estou pronto para transformar sua ideia em realidade.",
-          paragraph4: "Meu trabalho tem um olhar humano e profissional, dessa forma não uso apenas Inteligencia artificial sem colocar meu olhar analítico, adicionando todo meu conhecimento e sentimento para entregar um trabalho de excelência que não fica apenas dependente de conhecimento artificial que muitas vezes é equivocado. Gostou da minha forma de trabalhar? Venha conversar comigo!",
+        paragraph4:
+          "Meu trabalho tem um olhar humano e profissional, dessa forma não uso apenas Inteligencia artificial sem colocar meu olhar analítico, adicionando todo meu conhecimento e sentimento para entregar um trabalho de excelência que não fica apenas dependente de conhecimento artificial que muitas vezes é equivocado. Gostou da minha forma de trabalhar? Venha conversar comigo!",
         buttonCv: "Baixar CV",
         buttonProjects: "Meus projetos",
       },
@@ -131,6 +132,106 @@ const resources = {
         projectsTitle: "Seu próximo site pode começar aqui.",
         projectsDescription:
           "Cada projeto nasce de uma necessidade real e ganha uma experiência pensada para pessoas reais.",
+
+        plans: {
+          eyebrow: "Planos e preços",
+          heading: "Escolha o plano ideal para o seu negócio",
+          description:
+            "Soluções para colocar sua empresa no digital, do essencial ao projeto completo.",
+          popular: "Mais completo",
+          priceNote: "ou 12x no cartão com juros",
+          cash: "à vista",
+          includedLabel: "O que está incluído",
+          afterDelivery: "Após a entrega do site:",
+          warning:
+            "Obs.: Esse valor pode ter acréscimo a depender do trabalho e da complexidade do projeto.",
+          estimated: "Prazo estimado",
+          days: "{{count}} dias",
+          days_plural: "{{count}} dias",
+          mayVary: "Prazo pode variar",
+          contact: "Solicitar orçamento",
+          items: [
+            {
+              id: "basic",
+              name: "Básico",
+              stars: 1,
+              price: "R$ 500 ~ 800",
+              priceSuffix: "à vista",
+              description:
+                "Landing page básica (uma página) para se posicionar no Google e os clientes te acharem. O design é básico e sem efeitos na página. Design padronizado (modelo pré-definido). Personalização apenas de textos e imagens. Sem alterações estruturais e sem painel de controle.",
+              included: ["Incluso hospedagem", "Incluso domínio"],
+              maintenance: [
+                "Manutenção opcional sob demanda (R$ 60/hora de alteração)",
+                "Manutenção opcional recorrente até 3h de alterações por mês (R$ 120/mês) - Contrato anual",
+              ],
+              days: 2,
+            },
+            {
+              id: "professional",
+              name: "Profissional",
+              stars: 2,
+              price: "R$ 1.500 ~ 2.500",
+              priceSuffix: "à vista",
+              installments: "ou 12x no cartão com juros",
+              description:
+                "Landing page profissional (uma página) para se posicionar no Google e os clientes te acharem. O design é profissional, feito um protótipo antes da criação do site sob validação do cliente, com efeitos na página com design totalmente personalizado. Sem painel de controle.",
+              included: ["Incluso hospedagem", "Incluso domínio"],
+              maintenance: [
+                "Manutenção opcional sob demanda (R$ 100/hora de alteração)",
+                "Manutenção opcional recorrente até 3h de alterações por mês (R$ 200/mês) - Contrato anual",
+              ],
+              days: 15,
+            },
+            {
+              id: "premium",
+              name: "Premium",
+              stars: 3,
+              price: "R$ 3.500 ~ 4.500",
+              priceSuffix: "à vista",
+              installments: "ou 12x no cartão com juros",
+              description:
+                "Site profissional completo com mais de uma página. O design é profissional, feito um protótipo antes da criação do site sob validação do cliente, com efeitos na página com design totalmente personalizado. Com painel de controle para o cliente gerenciar seu cardápio, anúncios e ter o controle completo do seu site num painel de controle com login com acesso restrito.",
+              included: [
+                "Incluso hospedagem",
+                "Incluso domínio por 1 ano",
+                "Incluso banco de dados gratuito para até 50.000 usuários ativos, armazenamento de imagem de 1GB e 500MB de armazenamento do banco.",
+                "Backup gratuito do banco de dados no 1º ano, depois incluso se contratar a manutenção recorrente.",
+              ],
+              guarantee:
+                "Garantia de funcionamento com alterações gratuitas por 1 mês após publicação.",
+              maintenance: [
+                "Manutenção opcional sob demanda (R$ 200/hora de alteração)",
+                "Manutenção opcional recorrente até 3h de alterações por mês + 4 backups por mês (R$ 400/mês) - Contrato anual",
+                "Backups adicionais sob demanda: + R$ 30 cada.",
+              ],
+              days: 21,
+            },
+            {
+              id: "premiumPlus",
+              name: "Premium Plus",
+              stars: 4,
+              price: "R$ 5.000 ~ 7.000",
+              priceSuffix: "à vista",
+              installments: "ou 12x no cartão com juros",
+              description:
+                "Incluso (tudo do Premium): Site profissional completo (múltiplas páginas), Protótipo validado antes da criação, Painel de controle com login restrito, Hospedagem + domínio (1 ano), Banco de dados + backup incluso por 1 ano, Garantia de 1 mês após publicação.",
+              exclusiveLabel: "Exclusivo do Premium Plus:",
+              exclusive: [
+                "Logo profissional vetorizada",
+                "1 cartão ou banner para impressão",
+                "5 templates para Instagram (Canva)",
+              ],
+              guarantee:
+                "Garantia de funcionamento com alterações gratuitas por 1 mês após publicação.",
+              maintenance: [
+                "Manutenção opcional sob demanda (R$ 200/hora cada alteração)",
+                "Manutenção opcional recorrente até 3h de alterações por mês + 4 backups por mês (R$ 400/mês) - Contrato anual",
+                "Backups adicionais sob demanda: + R$ 30 cada.",
+              ],
+              days: 30,
+            },
+          ],
+        },
         plansEyebrow: "Planos de sites",
         plansTitle: "Veja os planos ofertados",
         plansDescription:
@@ -182,7 +283,8 @@ const resources = {
           "My passion for well-thought-out design and responsive interfaces drives me to build projects that combine usability, aesthetics, performance, and productivity. I work with the most modern technologies on the market — React, TypeScript, Tailwind, Node.js, Postgres, and Supabase — guaranteeing robust, scalable, and tailor-made solutions for your business needs.",
         paragraph3:
           "Beyond code, I have a sharp eye for visual design and an obsession with excellence. My commitment is to create digital experiences that connect functionality, clarity, and real results. If you're looking for a partner who delivers quality, innovation, and work that truly makes a difference, I'm ready to turn your idea into reality.",
-          paragraph4: "My work combines a human touch with professional expertise; I don't simply rely on artificial intelligence. Instead, I apply my own analytical perspective, incorporating my knowledge and intuition to deliver excellent results—avoiding the pitfalls of AI, which can often be inaccurate. Do you like my approach? Let's talk!",
+        paragraph4:
+          "My work combines a human touch with professional expertise; I don't simply rely on artificial intelligence. Instead, I apply my own analytical perspective, incorporating my knowledge and intuition to deliver excellent results—avoiding the pitfalls of AI, which can often be inaccurate. Do you like my approach? Let's talk!",
         buttonCv: "Download CV",
         buttonProjects: "My projects",
       },
@@ -277,6 +379,106 @@ const resources = {
         projectsTitle: "Your next website can start here.",
         projectsDescription:
           "Every project begins with a real need and becomes an experience designed for real people.",
+
+        plans: {
+          eyebrow: "Plans and pricing",
+          heading: "Choose the right plan for your business",
+          description:
+            "Solutions to bring your business online, from the essentials to a complete project.",
+          popular: "Most complete",
+          priceNote: "or 12 monthly credit-card payments with interest",
+          cash: "one-time payment",
+          includedLabel: "What's included",
+          afterDelivery: "After website delivery:",
+          warning:
+            "Note: The price may increase depending on the work required and project complexity.",
+          estimated: "Estimated timeline",
+          days: "{{count}} day",
+          days_plural: "{{count}} days",
+          mayVary: "Timeline may vary",
+          contact: "Request a quote",
+          items: [
+            {
+              id: "basic",
+              name: "Basic",
+              stars: 1,
+              price: "R$ 500 ~ 800",
+              priceSuffix: "one-time payment",
+              description:
+                "Basic landing page (one page) to help your business rank on Google and be found by customers. Basic design with no page effects. Standardized design (predefined template). Customization of text and images only. No structural changes and no control panel.",
+              included: ["Hosting included", "Domain included"],
+              maintenance: [
+                "Optional on-demand maintenance (R$ 60 per hour of changes)",
+                "Optional recurring maintenance for up to 3 hours of changes per month (R$ 120/month) — annual contract",
+              ],
+              days: 2,
+            },
+            {
+              id: "professional",
+              name: "Professional",
+              stars: 2,
+              price: "R$ 1,500 ~ 2,500",
+              priceSuffix: "one-time payment",
+              installments: "or 12 monthly credit-card payments with interest",
+              description:
+                "Professional landing page (one page) to help your business rank on Google and be found by customers. Professional design, with a prototype created before the website is built and approved by the client, page effects, and a fully customized design. No control panel.",
+              included: ["Hosting included", "Domain included"],
+              maintenance: [
+                "Optional on-demand maintenance (R$ 100 per hour of changes)",
+                "Optional recurring maintenance for up to 3 hours of changes per month (R$ 200/month) — annual contract",
+              ],
+              days: 15,
+            },
+            {
+              id: "premium",
+              name: "Premium",
+              stars: 3,
+              price: "R$ 3,500 ~ 4,500",
+              priceSuffix: "one-time payment",
+              installments: "or 12 monthly credit-card payments with interest",
+              description:
+                "Complete professional website with more than one page. Professional design, with a prototype created before the website is built and approved by the client, page effects, and a fully customized design. Includes a control panel where the client can manage their menu, ads, and website, with restricted login access.",
+              included: [
+                "Hosting included",
+                "Domain included for 1 year",
+                "Free database for up to 50,000 active users, 1 GB of image storage, and 500 MB of database storage.",
+                "Free database backup during the first year; included afterward if recurring maintenance is contracted.",
+              ],
+              guarantee:
+                "Functionality guarantee with free changes for 1 month after publication.",
+              maintenance: [
+                "Optional on-demand maintenance (R$ 200 per hour of changes)",
+                "Optional recurring maintenance for up to 3 hours of changes per month + 4 backups per month (R$ 400/month) — annual contract",
+                "Additional on-demand backups: + R$ 30 each.",
+              ],
+              days: 21,
+            },
+            {
+              id: "premiumPlus",
+              name: "Premium Plus",
+              stars: 4,
+              price: "R$ 5,000 ~ 7,000",
+              priceSuffix: "one-time payment",
+              installments: "or 12 monthly credit-card payments with interest",
+              description:
+                "Included (everything in Premium): complete professional website (multiple pages), prototype approved before development, control panel with restricted login, hosting + domain (1 year), database + backup included for 1 year, and a 1-month guarantee after publication.",
+              exclusiveLabel: "Exclusive to Premium Plus:",
+              exclusive: [
+                "Professional vector logo",
+                "1 business card or banner for printing",
+                "5 Instagram templates (Canva)",
+              ],
+              guarantee:
+                "Functionality guarantee with free changes for 1 month after publication.",
+              maintenance: [
+                "Optional on-demand maintenance (R$ 200 per change-hour)",
+                "Optional recurring maintenance for up to 3 hours of changes per month + 4 backups per month (R$ 400/month) — annual contract",
+                "Additional on-demand backups: + R$ 30 each.",
+              ],
+              days: 30,
+            },
+          ],
+        },
         plansEyebrow: "Choose your plan",
         plansTitle: "See the plans offered",
         plansDescription:
@@ -329,7 +531,8 @@ const resources = {
           "Mi pasión por el diseño bien pensado y las interfaces responsivas me impulsa a crear proyectos que unen usabilidad, estética, rendimiento y productividad. Trabajo con las tecnologías más modernas del mercado — React, TypeScript, Tailwind, Node.js, Postgres y Supabase — garantizando soluciones robustas, escalables y a medida para las necesidades de tu negocio.",
         paragraph3:
           "Más allá del código, tengo un ojo agudo para el diseño visual y una obsesión por la excelencia. Mi compromiso es crear experiencias digitales que conecten funcionalidad, claridad y resultados reales. Si buscas un socio que entregue calidad, innovación y un trabajo que realmente marque la diferencia, estoy listo para transformar tu idea en realidad.",
-          paragraph4: "Mi trabajo se basa en un enfoque humano y profesional; por ello, no me limito a utilizar inteligencia artificial sin aplicar mi propia perspectiva analítica. Aporto todo mi conocimiento y sensibilidad para ofrecer un trabajo de excelencia, sin depender exclusivamente de una inteligencia artificial que, a menudo, puede incurrir en errores. ¿Te gusta mi forma de trabajar? ¡Hablemos!",
+        paragraph4:
+          "Mi trabajo se basa en un enfoque humano y profesional; por ello, no me limito a utilizar inteligencia artificial sin aplicar mi propia perspectiva analítica. Aporto todo mi conocimiento y sensibilidad para ofrecer un trabajo de excelencia, sin depender exclusivamente de una inteligencia artificial que, a menudo, puede incurrir en errores. ¿Te gusta mi forma de trabajar? ¡Hablemos!",
         buttonCv: "Descargar CV",
         buttonProjects: "Mis proyectos",
       },
@@ -424,6 +627,106 @@ const resources = {
         projectsTitle: "Tu próximo sitio puede empezar aquí.",
         projectsDescription:
           "Cada proyecto nace de una necesidad real y se convierte en una experiencia pensada para personas reales.",
+
+        plans: {
+          eyebrow: "Planes y precios",
+          heading: "Elige el plan ideal para tu negocio",
+          description:
+            "Soluciones para llevar tu empresa al entorno digital, desde lo esencial hasta un proyecto completo.",
+          popular: "Más completo",
+          priceNote: "o 12 cuotas con tarjeta de crédito e intereses",
+          cash: "pago al contado",
+          includedLabel: "Qué incluye",
+          afterDelivery: "Después de la entrega del sitio web:",
+          warning:
+            "Nota: El precio puede aumentar según el trabajo y la complejidad del proyecto.",
+          estimated: "Plazo estimado",
+          days: "{{count}} día",
+          days_plural: "{{count}} días",
+          mayVary: "El plazo puede variar",
+          contact: "Solicitar presupuesto",
+          items: [
+            {
+              id: "basic",
+              name: "Básico",
+              stars: 1,
+              price: "R$ 500 ~ 800",
+              priceSuffix: "pago al contado",
+              description:
+                "Landing page básica (una página) para posicionarse en Google y que los clientes te encuentren. Diseño básico sin efectos en la página. Diseño estandarizado (plantilla predefinida). Personalización únicamente de textos e imágenes. Sin cambios estructurales y sin panel de control.",
+              included: ["Alojamiento incluido", "Dominio incluido"],
+              maintenance: [
+                "Mantenimiento opcional bajo demanda (R$ 60 por hora de cambios)",
+                "Mantenimiento recurrente opcional de hasta 3 horas de cambios al mes (R$ 120/mes) — contrato anual",
+              ],
+              days: 2,
+            },
+            {
+              id: "professional",
+              name: "Profesional",
+              stars: 2,
+              price: "R$ 1.500 ~ 2.500",
+              priceSuffix: "pago al contado",
+              installments: "o 12 cuotas con tarjeta de crédito e intereses",
+              description:
+                "Landing page profesional (una página) para posicionarse en Google y que los clientes te encuentren. Diseño profesional, con un prototipo creado antes del desarrollo del sitio y validado por el cliente, efectos en la página y diseño totalmente personalizado. Sin panel de control.",
+              included: ["Alojamiento incluido", "Dominio incluido"],
+              maintenance: [
+                "Mantenimiento opcional bajo demanda (R$ 100 por hora de cambios)",
+                "Mantenimiento recurrente opcional de hasta 3 horas de cambios al mes (R$ 200/mes) — contrato anual",
+              ],
+              days: 15,
+            },
+            {
+              id: "premium",
+              name: "Premium",
+              stars: 3,
+              price: "R$ 3.500 ~ 4.500",
+              priceSuffix: "pago al contado",
+              installments: "o 12 cuotas con tarjeta de crédito e intereses",
+              description:
+                "Sitio web profesional completo con más de una página. Diseño profesional, con un prototipo creado antes del desarrollo y validado por el cliente, efectos en la página y diseño totalmente personalizado. Incluye un panel de control para que el cliente gestione su menú, anuncios y sitio web, con acceso restringido mediante inicio de sesión.",
+              included: [
+                "Alojamiento incluido",
+                "Dominio incluido durante 1 año",
+                "Base de datos gratuita para hasta 50.000 usuarios activos, 1 GB de almacenamiento de imágenes y 500 MB de almacenamiento de base de datos.",
+                "Copia de seguridad gratuita de la base de datos durante el primer año; después, incluida si se contrata mantenimiento recurrente.",
+              ],
+              guarantee:
+                "Garantía de funcionamiento con cambios gratuitos durante 1 mes después de la publicación.",
+              maintenance: [
+                "Mantenimiento opcional bajo demanda (R$ 200 por hora de cambios)",
+                "Mantenimiento recurrente opcional de hasta 3 horas de cambios al mes + 4 copias de seguridad al mes (R$ 400/mes) — contrato anual",
+                "Copias de seguridad adicionales bajo demanda: + R$ 30 cada una.",
+              ],
+              days: 21,
+            },
+            {
+              id: "premiumPlus",
+              name: "Premium Plus",
+              stars: 4,
+              price: "R$ 5.000 ~ 7.000",
+              priceSuffix: "pago al contado",
+              installments: "o 12 cuotas con tarjeta de crédito e intereses",
+              description:
+                "Incluye todo lo de Premium: sitio web profesional completo (varias páginas), prototipo validado antes del desarrollo, panel de control con acceso restringido, alojamiento + dominio (1 año), base de datos + copias de seguridad incluidas durante 1 año y garantía de 1 mes después de la publicación.",
+              exclusiveLabel: "Exclusivo de Premium Plus:",
+              exclusive: [
+                "Logotipo profesional vectorizado",
+                "1 tarjeta o banner para impresión",
+                "5 plantillas para Instagram (Canva)",
+              ],
+              guarantee:
+                "Garantía de funcionamiento con cambios gratuitos durante 1 mes después de la publicación.",
+              maintenance: [
+                "Mantenimiento opcional bajo demanda (R$ 200 por hora de cambios)",
+                "Mantenimiento recurrente opcional de hasta 3 horas de cambios al mes + 4 copias de seguridad al mes (R$ 400/mes) — contrato anual",
+                "Copias de seguridad adicionales bajo demanda: + R$ 30 cada una.",
+              ],
+              days: 30,
+            },
+          ],
+        },
         plansEyebrow: "Planes de sitios web",
         plansTitle: "Consulta los planes ofrecidos os planos ofertados",
         plansDescription:
