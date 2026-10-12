@@ -27,7 +27,10 @@ export const ProcessTimeline: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full py-16 px-4 md:px-8 bg-[var(--color-bg-dark)] text-[var(--color-text-primary)] transition-colors duration-300" id="process">
+    <section
+      className="w-full py-16 px-4 md:px-8 bg-[var(--color-bg-dark)] text-[var(--color-text-primary)] transition-colors duration-300"
+      id="process"
+    >
       <div className="max-w-5xl mx-auto">
         {/* Cabeçalho */}
         <div className="mb-16 text-center md:text-left">
@@ -79,7 +82,7 @@ export const ProcessTimeline: React.FC = () => {
 
                   {/* Nó Central (Ícone) */}
                   <div className="absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2 flex items-center justify-center z-10">
-                    <div className="w-14 h-14 rounded-full bg-[var(--color-bg-dark)] border-2 border-[var(--color-accent)] flex items-center justify-center shadow-[0_0_15px_var(--color-accent-glow)] group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-14 h-14 rounded-full bg-[var(--color-bg-dark)] border-2 border-[var(--color-accent)] flex items-center justify-center shadow-[0_0_30px_var(--color-accent-glow)] shadow-amber-500 group-hover:scale-110 transition-transform duration-300">
                       <Icon className="w-6 h-6 text-[var(--color-accent)]" />
                     </div>
                   </div>
