@@ -503,7 +503,7 @@ body[data-theme='light'] .project-button.secondary {
 
 .magnetic-button {
   display: flex;
-  min-height: 4.7rem;
+  min-height: 4.0rem;
   flex: 1 1 0;
   align-items: center;
   justify-content: space-between;
@@ -511,7 +511,7 @@ body[data-theme='light'] .project-button.secondary {
   padding: 1.2rem 1.5rem 1.2rem 1.8rem;
   border: 1px solid transparent;
   border-radius: 0.35rem;
-  font-size: clamp(1rem, 1.15vw, 1.2rem);
+  font-size: clamp(1rem, 1.15vw, 1.1rem);
   font-weight: 700;
   letter-spacing: 0.03em;
   transition: box-shadow 0.35s ease, background-color 0.35s ease, border-color 0.35s ease;
@@ -536,7 +536,7 @@ body[data-theme='light'] .project-button.secondary {
 .magnetic-button-orange {
   background: #fa4809;
   color: #ffffff;
-  max-width: 350px;
+  max-width: 320px;
 }
 
 .magnetic-button-arrow {
